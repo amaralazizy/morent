@@ -21,7 +21,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className="h-[124px] pl-[3.75rem] pr-8 flex items-center max-[920px]:gap-8 max-[920px]:px-6 max-[920px]:pt-8 max-[920px]:h-[172px] max-[920px]:flex-col">
+    <nav className="h-31 pl-[3.75rem] pr-8 flex items-center max-[920px]:gap-8 max-[920px]:px-6 max-[920px]:pt-8 max-[920px]:h-[172px] max-[920px]:flex-col">
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-16">
           <Logo />

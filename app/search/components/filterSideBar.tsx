@@ -1,6 +1,5 @@
 "use client";
 
-import { useSidebar } from "../context/SidebarContext";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -20,11 +19,10 @@ const capacities = [
   { name: "8 or More", count: 16 },
 ];
 
-export default function FilterSidebar() {
+export default function FilterSidebar({className}: Readonly<{className?: string}>) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedCapacities, setSelectedCapacities] = useState<string[]>([]);
   const [price, setPrice] = useState(100);
-  const { isOpen } = useSidebar();
 
   const handleFilterChange = (
     category: string,
@@ -40,10 +38,7 @@ export default function FilterSidebar() {
 
   return (
     <aside
-      className={cn(
-        "absolute w-64 p-4 bg-white shadow-lg rounded-lg h-screen mr-4 transition-all duration-1000 ease-in-out",
-        isOpen ? "-left-full" : "left-0"
-      )}
+      className={cn("w-64 p-4 bg-white h-full overflow-y-auto", className)}
     >
       <h2 className="text-lg font-semibold mb-4">Type</h2>
       {categories.map(({ name, count }) => (

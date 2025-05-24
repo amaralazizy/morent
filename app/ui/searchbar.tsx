@@ -1,6 +1,6 @@
 "use client";
 
-import { useSidebar } from "../context/SidebarContext";
+// import { useSidebar } from "../context/SidebarContext";
 import { Settings2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "../../lib/utils";
@@ -8,7 +8,10 @@ import { cn } from "../../lib/utils";
 export default function SearchBar({
   className,
 }: Readonly<{ className: string }>) {
-  const { toggleSidebar } = useSidebar();
+  // const { toggleSidebar } = useSidebar();
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    
+  }
   return (
     <div
       className={cn(
@@ -21,10 +24,20 @@ export default function SearchBar({
         type="text"
         className="outline-none placeholder:text-sm placeholder:text-secondary-400"
         placeholder="Search something here"
+        name="search"
+        // onChange={(e) => console.log(e.target.value)}
       />
       <Button
         className="bg-white hover:bg-transparent cursor-pointer shadow-none"
-        onClick={toggleSidebar}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleSearch(e);
+          }
+        }
+      }
+        onClick={(e) => {
+          handleSearch(e);
+        }}
       >
         <Settings2 className="text-black scale-140" />
       </Button>

@@ -15,7 +15,7 @@ interface CommandBoxProps {
   setOpen?: (open: boolean) => void;
 }
 
-export default function CommandBox({
+function CommandBox({
   list,
   listItemName,
   setCity,
@@ -47,3 +47,5 @@ export default function CommandBox({
     </Command>
   );
 }
+
+export default CommandBox;

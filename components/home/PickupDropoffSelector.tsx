@@ -4,9 +4,20 @@ import { ArrowUpDown } from "lucide-react";
 import TripLocationCard from "./TripLocationCard";
 import { useState } from "react";
 import { DeliveryInfoType } from "@/types";
+import { cn } from "@/lib/utils";
+export default function PickupDropoffSelector({className, switchClassName}: Readonly<{className?: string, switchClassName?: string}>) {
+  function isInfoDifferent(
+    a: DeliveryInfoType<"pickup">,
+    b: DeliveryInfoType<"dropoff">
+  ) {
+    const { type: _, ...restA } = a;
+    const { type: __, ...restB } = b;
+    return JSON.stringify(restA) !== JSON.stringify(restB);
+  }
 
-export default function PickupDropoffSelector() {
+
   const handleSwitch = () => {
+    if (!isInfoDifferent(pickup, dropoff)) return;
     setPickup(() => ({ ...dropoff, type: "pickup" }));
     setDropoff(() => ({ ...pickup, type: "dropoff" }));
   };
@@ -18,6 +29,7 @@ export default function PickupDropoffSelector() {
     time: null,
   });
 
+
   const [dropoff, setDropoff] = useState<DeliveryInfoType<"dropoff">>({
     type: "dropoff",
     city: null,
@@ -25,8 +37,11 @@ export default function PickupDropoffSelector() {
     time: null,
   });
 
+
+  
+
   return (
-    <div className="flex gap-11 items-center">
+    <div className={cn("flex gap-11 items-center", className)}>
       <TripLocationCard
         className="flex-1"
         setDeliveryInfo={(val) =>
@@ -39,7 +54,10 @@ export default function PickupDropoffSelector() {
         deliveryInfo={pickup}
       />
       <button
-        className="w-15 aspect-square bg-primary-500 flex items-center justify-center rounded-[10px] cursor-pointer"
+        className={cn(
+          "w-15 aspect-square bg-primary-500 flex items-center justify-center rounded-[10px] cursor-pointer",
+          switchClassName
+        )}
         onClick={handleSwitch}
       >
         <ArrowUpDown className="text-white w-5 aspect-square" />

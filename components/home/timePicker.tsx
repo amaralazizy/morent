@@ -4,17 +4,17 @@ interface TimePickerProps {
   setOpen?: (open: boolean) => void;
 }
 
-export default function TimePicker({
+function TimePicker({
   selectedTime,
   onSelect,
   setOpen = () => {},
 }: Readonly<TimePickerProps>) {
-   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-     if (event.key === "Enter") {
-       event.preventDefault();
-       setOpen(false);
-     }
-   };
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      setOpen(false);
+    }
+  };
   return (
     <input
       type="time"
@@ -25,3 +25,5 @@ export default function TimePicker({
     />
   );
 }
+
+export default TimePicker;

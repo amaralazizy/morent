@@ -1,15 +1,13 @@
 import { Calendar } from "@/components/ui/calendar";
-
 interface CalendarProps {
-  selectedDate: Date;
+  selectedDate: Date | undefined;
   onSelect: (date: Date | undefined) => void;
   setOpen?: (open: boolean) => void;
 }
 
-export default function CalendarPicker({
+function CalendarPicker({
   selectedDate,
   onSelect,
-
   setOpen = () => {},
 }: Readonly<CalendarProps>) {
   return (
@@ -21,9 +19,12 @@ export default function CalendarPicker({
           onSelect(newDate);
           console.log("New date selected:", newDate);
         }
+        else onSelect(undefined);
         setOpen(false);
       }}
       className="rounded-md border"
     />
   );
 }
+
+export default CalendarPicker;

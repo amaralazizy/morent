@@ -29,19 +29,24 @@ export default function PopoverWrapper({
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger className={cn("w-full", className)} asChild>
         <Button
-          className="has-[>svg]:p-0 text-ellipsis"
+          className="has-[>svg]:p-0 overflow-hidden flex justify-between"
           variant="outline"
           role="combobox"
           aria-expanded={open}
         >
-          {value ? value : placeholder}
+          <span className="truncate">{value ? value : placeholder}</span>
           <ChevronDown className="h-[14px] aspect-square text-black" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-full p-2">
         {Children.map(children, (child) =>
           isValidElement(child)
-            ? cloneElement(child as React.ReactElement<{ setOpen: (open: boolean) => void }>, { setOpen })
+            ? cloneElement(
+                child as React.ReactElement<{
+                  setOpen: (open: boolean) => void;
+                }>,
+                { setOpen }
+              )
             : child
         )}
       </PopoverContent>

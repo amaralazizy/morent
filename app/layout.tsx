@@ -1,6 +1,12 @@
 import "./globals.css";
 import Navbar from "./ui/navbar";
-import { SidebarProvider } from "./context/SidebarContext";
+import { ReactScan } from "@/app/ReactScan";
+import Footer from "@/components/home/Footer";
+import { plusJakarta } from "@/app/ui/fonts";
+
+
+
+
 
 export default function RootLayout({
   children,
@@ -9,11 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-default flex flex-col h-screen box-border">
-        <SidebarProvider>
+      <head>
+        <ReactScan />
+      </head>
+      <body className={`${plusJakarta.className} antialiased font-default box-border`}>
+        <div className="flex flex-col min-h-screen">
           <Navbar />
-          {children}
-        </SidebarProvider>
+          <div className="flex flex-1 overflow-hidden">{children}</div>
+        </div>
+        <Footer />
       </body>
     </html>
   );

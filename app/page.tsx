@@ -1,12 +1,10 @@
 import PickupDropoffSelector from "@/components/home/PickupDropoffSelector";
 import PopularCars from "@/components/home/PopularCars";
 import SloganCard from "@/components/home/sloganCard";
-// import FilterSidebar from "./ui/filterSideBar";
 
 export default function Home() {
   return (
-    <main className="px-16 pt-8 pb-8 flex-1 bg-default-background max-[920px]:relative max-sm:px-[10%]">
-      {/* <FilterSidebar /> */}
+    <main className="p-8 flex-1 bg-default-background max-[920px]:relative max-sm:px-[10%] overflow-x-hidden overflex-y-scroll">
       <div className="flex mb-8">
         <div className="hidden absolute w-full h-[116px] top-0 left-0 bg-white max-[920px]:block"></div>
         <section className="w-full flex flex-wrap gap-8">
