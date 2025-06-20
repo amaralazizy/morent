@@ -5,7 +5,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/ui/command";
+} from "@/app/components/ui/command";
 
 interface CommandBoxProps {
   list: { name: string; id: string }[];
@@ -34,9 +34,9 @@ function CommandBox({
               value={item.name}
               className="cursor-pointer"
               onSelect={(currentCity) => {
-                  console.log(currentCity === city, currentCity, city);
-                  setCity(currentCity === city ? null : currentCity);
-                  setOpen(false);
+                console.log(currentCity === city, currentCity, city);
+                setCity(currentCity === city ? null : currentCity);
+                setOpen(false);
               }}
             >
               {item.name}

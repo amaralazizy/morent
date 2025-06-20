@@ -1,9 +1,12 @@
-import FilterSidebar  from "@/app/search/components/filterSideBar";
+import FilterSidebar  from "@/app/components/search/filterSideBar";
+import { PropsWithChildren } from "react";
 
-export default function SearchLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-    return (
-      <div className="font-default flex w-full">
-        <FilterSidebar className="max-lg:hidden" />
+export default function SearchLayout({
+  children,
+}: Readonly<PropsWithChildren>) {
+  return (
+    <div className="font-default flex w-full">
+      <FilterSidebar className="max-lg:hidden" />
         {children}
       </div>
     );

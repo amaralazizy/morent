@@ -1,4 +1,4 @@
-import { Calendar } from "@/components/ui/calendar";
+import { Calendar } from "@/app/components/ui/calendar";
 interface CalendarProps {
   selectedDate: Date | undefined;
   onSelect: (date: Date | undefined) => void;
@@ -18,8 +18,7 @@ function CalendarPicker({
         if (newDate) {
           onSelect(newDate);
           console.log("New date selected:", newDate);
-        }
-        else onSelect(undefined);
+        } else onSelect(undefined);
         setOpen(false);
       }}
       className="rounded-md border"

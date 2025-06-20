@@ -5,69 +5,84 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary-900: #0A196F;
+  --color-primary-900: #0a196f;
   --color-primary-800: #102587;
-  --color-primary-700: #1A37A7;
-  --color-primary-600: #264BC8;
-  --color-primary-500: #3563E9;
-  --color-primary-400: #658DF1;
-  --color-primary-300: #85A8F8;
-  --color-primary-200: #AEC8FC;
-  --color-primary-100: #D6E4FD;
+  --color-primary-700: #1a37a7;
+  --color-primary-600: #264bc8;
+  --color-primary-500: #3563e9;
+  --color-primary-400: #658df1;
+  --color-primary-300: #85a8f8;
+  --color-primary-200: #aec8fc;
+  --color-primary-100: #d6e4fd;
 
-  --color-success-900: #3B6506;
-  --color-success-800: #4C7A0B;
+  --color-success-900: #3b6506;
+  --color-success-800: #4c7a0b;
   --color-success-700: #659711;
-  --color-success-600: #7FB519;
-  --color-success-500: #9CD323;
-  --color-success-400: #BCE455;
-  --color-success-300: #D3F178;
-  --color-success-200: #E8FAA6;
-  --color-success-100: #F5FCD2;
+  --color-success-600: #7fb519;
+  --color-success-500: #9cd323;
+  --color-success-400: #bce455;
+  --color-success-300: #d3f178;
+  --color-success-200: #e8faa6;
+  --color-success-100: #f5fcd2;
 
-  --color-error-900: #7A0619;
-  --color-error-800: #930B16;
-  --color-error-700: #B71112;
-  --color-error-600: #DB2719;
-  --color-error-500: #FF4423;
-  --color-error-400: #FF7F59;
-  --color-error-300: #FFA37A;
-  --color-error-200: #FFC8A6;
-  --color-error-100: #FFE7D3;
+  --color-error-900: #7a0619;
+  --color-error-800: #930b16;
+  --color-error-700: #b71112;
+  --color-error-600: #db2719;
+  --color-error-500: #ff4423;
+  --color-error-400: #ff7f59;
+  --color-error-300: #ffa37a;
+  --color-error-200: #ffc8a6;
+  --color-error-100: #ffe7d3;
 
-   --color-warning-900: #7A4D0B;
-    --color-warning-800: #936312;
-    --color-warning-700: #87821D;
-    --color-warning-600: #DBA32A;
-    --color-warning-500: #FFC73A;
-    --color-warning-400: #FFD96B;
-    --color-warning-300: #FFE488;
-    --color-warning-200: #FFEFB0;
-    --color-warning-100: #FFF8D7;
+  --color-warning-900: #7a4d0b;
+  --color-warning-800: #936312;
+  --color-warning-700: #87821d;
+  --color-warning-600: #dba32a;
+  --color-warning-500: #ffc73a;
+  --color-warning-400: #ffd96b;
+  --color-warning-300: #ffe488;
+  --color-warning-200: #ffefb0;
+  --color-warning-100: #fff8d7;
 
-    --color-information-900: #102E7A;
-    --color-information-800: #1A4393;
-    --color-information-700: #2A60B7;
-    --color-information-600: #3D81DB;
-    --color-information-500: #54A6FF;
-    --color-information-400: #7EC2FF;
-    --color-information-300: #98D3FF;
-    --color-information-200: #BAE5FF;
-    --color-information-100: #DCF3FF;
+  --color-information-900: #102e7a;
+  --color-information-800: #1a4393;
+  --color-information-700: #2a60b7;
+  --color-information-600: #3d81db;
+  --color-information-500: #54a6ff;
+  --color-information-400: #7ec2ff;
+  --color-information-300: #98d3ff;
+  --color-information-200: #bae5ff;
+  --color-information-100: #dcf3ff;
 
-    --color-secondary-900: #040815;
-    --color-secondary-800: #080C19;
-    --color-secondary-700: #0D121F;
-    --color-secondary-600: #131825;
-    --color-secondary-500: #1A202C;
-    --color-secondary-400: #596780;
-    --color-secondary-300: #90A3BF;
-    --color-secondary-200: #C3D4E9;
-    --color-secondary-100: #E0E9F4;
+  --color-secondary-900: #040815;
+  --color-secondary-800: #080c19;
+  --color-secondary-700: #0d121f;
+  --color-secondary-600: #131825;
+  --color-secondary-500: #1a202c;
+  --color-secondary-400: #596780;
+  --color-secondary-300: #90a3bf;
+  --color-secondary-200: #c3d4e9;
+  --color-secondary-100: #e0e9f4;
 
-    --color-default-background: #F6F7F9;
+  --color-default-background: #f6f7f9;
 
-    --font-default: var(--font-default), Arial, sans-serif;
+  --font-default: var(--font-default), Arial, sans-serif;
+   --animate-fadIn: fadIn 0.5s ease-in-out forwards;
+   --animate-fadOut: fadOut 0.5s ease-in-out forwards;
+  @keyframes fadIn {
+    0% {
+      opacity: 0;
+    },
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadOut {
+    100% {
+      opacity: 0;
+    }
+  }
 }
 
 :root {
@@ -104,6 +119,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --padding-global: 2rem;
 }
 
 .dark {
@@ -189,3 +205,127 @@
   }
 }
 
+/* Custom Loading Animations */
+@keyframes car-bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-2px);
+  }
+}
+
+@keyframes car-bounce-slow {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-3px);
+  }
+}
+
+@keyframes car-bounce-fast {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-1px);
+  }
+}
+
+@keyframes dash-move {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes dash-move-slow {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes dash-move-fast {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(1.5);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-car-bounce {
+  animation: car-bounce 2s ease-in-out infinite;
+}
+
+.animate-car-bounce-slow {
+  animation: car-bounce-slow 3s ease-in-out infinite;
+}
+
+.animate-car-bounce-fast {
+  animation: car-bounce-fast 1s ease-in-out infinite;
+}
+
+.animate-dash-move {
+  animation: dash-move 2s linear infinite;
+}
+
+.animate-dash-move-slow {
+  animation: dash-move-slow 3s linear infinite;
+}
+
+.animate-dash-move-fast {
+  animation: dash-move-fast 1s linear infinite;
+}
+
+.animate-smoke {
+  animation: smoke 1.5s ease-out infinite;
+}
+
+.animate-progress {
+  animation: progress 3s ease-in-out infinite;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.p-global {
+  padding: var(--padding-global);
+}

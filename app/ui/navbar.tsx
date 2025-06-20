@@ -1,7 +1,12 @@
 import Logo from "./logo";
 import SearchBar, { MobileSearchBar } from "./searchbar";
 import { Heart, Bell, Settings } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/app/components/ui/avatar";
+import Link from "next/link";
 
 export default function Navbar() {
   const buttons = [
@@ -24,7 +29,9 @@ export default function Navbar() {
     <nav className="h-31 pl-[3.75rem] pr-8 flex items-center max-[920px]:gap-8 max-[920px]:px-6 max-[920px]:pt-8 max-[920px]:h-[172px] max-[920px]:flex-col">
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-16">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <SearchBar className="max-lg:min-w-0 max-[920px]:hidden" />
         </div>
         <div className="flex items-center gap-5">

@@ -2,16 +2,17 @@
 
 import { ArrowUpDown } from "lucide-react";
 import TripLocationCard from "./TripLocationCard";
-import { useState } from "react";
+import { useState, memo } from "react";
 import { DeliveryInfoType } from "@/types";
 import { cn } from "@/lib/utils";
-export default function PickupDropoffSelector({className, switchClassName}: Readonly<{className?: string, switchClassName?: string}>) {
+ function PickupDropoffSelector({className, switchClassName}: Readonly<{className?: string, switchClassName?: string}>) {
   function isInfoDifferent(
     a: DeliveryInfoType<"pickup">,
     b: DeliveryInfoType<"dropoff">
   ) {
     const { type: _, ...restA } = a;
     const { type: __, ...restB } = b;
+    
     return JSON.stringify(restA) !== JSON.stringify(restB);
   }
 
@@ -76,3 +77,5 @@ export default function PickupDropoffSelector({className, switchClassName}: Read
     </div>
   );
 }
+
+export default memo(PickupDropoffSelector);

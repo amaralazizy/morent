@@ -2,16 +2,51 @@
 
 // import { useSidebar } from "../context/SidebarContext";
 import { Settings2, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { cn } from "../../lib/utils";
-
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useSearch } from "@/app/context/searchContext";
+import { useEffect } from "react";
 export default function SearchBar({
   className,
 }: Readonly<{ className: string }>) {
-  // const { toggleSidebar } = useSidebar();
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    
+  const {
+    search,
+    setSearch,
+    selectedTypes,
+    selectedCapacities,
+    price,
+    setSelectedTypes,
+    setSelectedCapacities,
+    setPrice,
+  } = useSearch();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  function handleSearch() {
+    const params = new URLSearchParams();
+    if (search) {
+      params.set("query", search.toString());
+      if (selectedTypes.length > 0) params.set("type", selectedTypes.join(","));
+      if (selectedCapacities.length > 0)
+        params.set("capacity", selectedCapacities.join(","));
+      if (price) params.set("price", price.toString());
+    }
+    router.push(`/search?${params.toString()}`);
   }
+
+  useEffect(() => {
+    if (pathname === "/search") handleSearch();
+  }, [price, selectedTypes, selectedCapacities, search]);
+
+  useEffect(() => {
+    setSearch(searchParams.get("query") || "");
+    setSelectedTypes(searchParams.get("type")?.split(",") || []);
+    setSelectedCapacities(searchParams.get("capacity")?.split(",") || []);
+    setPrice(Number(searchParams.get("price")) || null);
+  }, []);
+
   return (
     <div
       className={cn(
@@ -19,26 +54,30 @@ export default function SearchBar({
         className
       )}
     >
-      <Search />
+      <Button
+        className="bg-transparent hover:bg-transparent cursor-pointer shadow-none"
+        onClick={() => {
+          if (search !== "") handleSearch();
+        }}
+      >
+        <Search className="text-black  scale-140" />
+      </Button>
       <input
         type="text"
         className="outline-none placeholder:text-sm placeholder:text-secondary-400"
         placeholder="Search something here"
         name="search"
-        // onChange={(e) => console.log(e.target.value)}
-      />
-      <Button
-        className="bg-white hover:bg-transparent cursor-pointer shadow-none"
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
+        value={search}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
-            handleSearch(e);
+            handleSearch();
           }
-        }
-      }
-        onClick={(e) => {
-          handleSearch(e);
         }}
-      >
+      />
+      <Button className="bg-white hover:bg-transparent cursor-pointer shadow-none">
         <Settings2 className="text-black scale-140" />
       </Button>
     </div>

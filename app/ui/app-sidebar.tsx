@@ -4,7 +4,7 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarHeader,
-} from "@/components/ui/sidebar";
+} from "@/app/components/ui/sidebar";
 
 export function AppSidebar(): React.ReactNode {
   return (

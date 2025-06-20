@@ -1,6 +1,14 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
+}
+
+export function getCount<T extends { [key: string]: any }>(
+  arr: T[],
+  attribute: keyof T,
+  value: string
+): number {
+  return arr.filter((c) => c[attribute] === value).length;
 }

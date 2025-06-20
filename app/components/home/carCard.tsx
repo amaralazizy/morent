@@ -3,31 +3,19 @@
 import Image from "next/image";
 import Like from "@/app/ui/like";
 import { Fuel, LifeBuoy, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import { cn } from "@/lib/utils";
-
-interface Car {
-  id: number;
-  name: string;
-  type: string;
-  capacity: number;
-  fuelTank: number;
-  transmission: string;
-  price: number;
-  discount?: number | null;
-  image: string;
-  // Add other car properties as needed
-}
-
+import { Car } from "@/types/database";
+import { useRouter } from "next/navigation";
 export interface CarCardProps {
   car: Car;
   className?: string;
 }
 
-export default function CarCard({ car, className}: CarCardProps) {
-
+export default function CarCard({ car, className }: CarCardProps) {
+  const router = useRouter();
   return (
-    <div className={cn("p-6 bg-white rounded-[10px]", className)} onClick={() => console.log(`Car ${car.id} has been clicked`)}>
+    <div className={cn("p-6 bg-white rounded-[10px]", className)}>
       <div className="flex justify-between mb-16">
         <div className="grid gap-1">
           <h4 className="text-xl font-medium">{car.name}</h4>
@@ -35,7 +23,10 @@ export default function CarCard({ car, className}: CarCardProps) {
         </div>
         <Like />
       </div>
-      <div className="relative px-9 mb-16">
+      <div
+        className="relative px-9 mb-16 cursor-pointer"
+        onClick={() => router.push(`/car/${car.id}`)}
+      >
         <Image
           src="/car1.png"
           // src={car.image}
@@ -64,15 +55,20 @@ export default function CarCard({ car, className}: CarCardProps) {
         <div>
           <p>
             <span className="text-xl font-bold text-secondary-500">
-              ${car.discount ? car.discount.toFixed(2) : car.price.toFixed(2)}/
+              ${(car.price - car.discount).toFixed(2)}/
             </span>
             <span className="text-sm text-secondary-300"> day</span>
           </p>
-          {car.discount && (
-            <span className="text-sm text-secondary-300 line-through">{car.price.toFixed(2)}</span>
+          {!!car.discount && (
+            <span className="text-sm text-secondary-300 line-through">
+              {car.price.toFixed(2)}
+            </span>
           )}
         </div>
-        <Button className="text-white px-5 py-2.5 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer">
+        <Button
+          className="text-white px-5 py-2.5 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer"
+          onClick={() => router.push(`/car/${car.id}`)}
+        >
           Rent Now
         </Button>
       </div>
