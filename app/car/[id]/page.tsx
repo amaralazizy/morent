@@ -1,5 +1,5 @@
-import CarDetails from "@/app/components/cars/CarDetails";
-import CarReviews from "@/app/components/cars/CarReviews";
+import CarDetails from "@/components/CarDetails";
+import CarReviews from "@/components/CarReviews";
 import RecentCars from "@/app/components/home/PopularCars";
 interface CarPageProps {
   params: Promise<{ id: string }>;

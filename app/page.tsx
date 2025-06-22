@@ -1,6 +1,6 @@
-import PickupDropoffSelector from "@/app/components/home/PickupDropoffSelector";
-import PopularCars from "@/app/components/home/PopularCars";
-import SloganCard from "@/app/components/home/sloganCard";
+import PickupDropoffSelector from "@/components/PickupDropoffSelector";
+import PopularCars from "@/components/PopularCars";
+import SloganCard from "@/components/SloganCard";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
         </section>
       </div>
       <PickupDropoffSelector />
-      <PopularCars  />
+      <PopularCars />
     </main>
   );
 }

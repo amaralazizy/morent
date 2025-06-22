@@ -1,4 +1,4 @@
-import FilterSidebar  from "@/app/components/search/filterSideBar";
+import FilterSidebar from "@/components/FilterSideBar";
 import { PropsWithChildren } from "react";
 
 export default function SearchLayout({
@@ -7,7 +7,7 @@ export default function SearchLayout({
   return (
     <div className="font-default flex w-full">
       <FilterSidebar className="max-lg:hidden" />
-        {children}
-      </div>
-    );
+      {children}
+    </div>
+  );
 }

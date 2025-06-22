@@ -1,13 +1,11 @@
 import "./globals.css";
-import Navbar from "./ui/navbar";
+import Navbar from "../components/Navbar";
 import { ReactScan } from "@/app/ReactScan";
-import Footer from "@/app/components/home/Footer";
-import { plusJakarta } from "@/app/ui/fonts";
-import { SearchProvider } from "@/app/context/searchContext";
+import Footer from "@/components/Footer";
+import { plusJakarta } from "@/fonts";
+import { SearchProvider } from "@/contexts/SearchContext";
 import { PropsWithChildren } from "react";
-export default function RootLayout({
-  children,
-}: Readonly<PropsWithChildren>) {
+export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
       <head>
@@ -18,8 +16,8 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen">
           <SearchProvider>
-              <Navbar />
-              <main className="flex flex-1 overflow-hidden">{children}</main>
+            <Navbar />
+            <main className="flex flex-1 overflow-hidden">{children}</main>
           </SearchProvider>
         </div>
         <Footer />

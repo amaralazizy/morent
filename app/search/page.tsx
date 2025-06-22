@@ -1,6 +1,6 @@
 "use client";
-import PickupDropoffSelector from "@/app/components/home/PickupDropoffSelector";
-import SearchResults from "@/app/components/search/searchResults";
+import PickupDropoffSelector from "@/components/PickupDropoffSelector";
+import SearchResults from "@/components/SearchResults";
 
 export default function SearchPage() {
   return (

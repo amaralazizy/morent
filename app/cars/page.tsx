@@ -1,6 +1,5 @@
-import AllCars from "@/app/components/cars/AllCars";
+import AllCars from "@/components/AllCars";
 
 export default function CarsPage() {
-  return <AllCars />
-
+  return <AllCars />;
 }
