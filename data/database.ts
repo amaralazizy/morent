@@ -1,6 +1,6 @@
 import { getCount } from "@/lib/utils";
 import { Car } from "@/types/database";
-import { reverseEasing } from "framer-motion";
+// import { reverseEasing } from "framer-motion";
 
 export const cars: Car[] = [
   {

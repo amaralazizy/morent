@@ -2,11 +2,11 @@ import CarDetails from "@/components/CarDetails";
 import CarReviews from "@/components/CarReviews";
 import RecentCars from "@/components/PopularCars";
 import FilterSidebar from "@/components/FilterSideBar";
-interface CarPageProps {
-  params: { id: string };
-}
+// interface CarPageProps {
+//   params: { id: string };
+// }
 
-export default function CarPage({ params }: CarPageProps) {
+export default function CarPage({ params }: { params: { id: string } }) {
   const { id } =  params;
   return (
     <div className="flex w-full">
