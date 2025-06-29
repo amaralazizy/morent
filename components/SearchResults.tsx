@@ -44,6 +44,7 @@ export default function SearchResults() {
       setError(true);
       setInitialLoading(false);
       setLoadingCards(false);
+      throw error;
     }
   };
 

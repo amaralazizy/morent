@@ -29,7 +29,7 @@ export default function TypeFilter() {
         <div key={name} className="flex items-center space-x-2 mb-2">
           <Input
             type="checkbox"
-            checked={selectedTypes.includes(name)}
+            // checked={selectedTypes.includes(name)}
             onChange={() => handleFilterChange(name)}
             className="w-4 aspect-square text-blue-500"
             id={name}

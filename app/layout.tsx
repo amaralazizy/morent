@@ -9,7 +9,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
       <head>
-        <ReactScan />
+        {/* <ReactScan /> */}
       </head>
       <body
         className={`${plusJakarta.className} antialiased font-default box-border`}
