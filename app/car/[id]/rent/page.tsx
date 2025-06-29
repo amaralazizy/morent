@@ -5,8 +5,12 @@
 import CarRentCard from "@/components/CarRentCard";
 import RentForm from "@/components/RentForm";
 
-export default function RentPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+type RentPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function RentPage({ params }: RentPageProps) {
+  const { id } = await params;
   // const [car, setCar] = useState<Car | undefined>(undefined);
   // const car: Car | undefined = cars.find((car) => car.id === id);
 

@@ -6,8 +6,12 @@ import FilterSidebar from "@/components/FilterSideBar";
 //   params: { id: string };
 // }
 
-export default function CarPage({ params }: { params: { id: string } }) {
-  const { id } =  params;
+type CarPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function CarPage({ params }: CarPageProps) {
+  const { id } = await params;
   return (
     <div className="flex w-full">
       <FilterSidebar />

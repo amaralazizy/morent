@@ -11,7 +11,7 @@ export default function PriceFilter() {
   useEffect(() => {
     const handler = setTimeout(() => setPrice(sliderValue), 500);
     return () => clearTimeout(handler);
-  }, [sliderValue]);
+  }, [sliderValue, setPrice]);
 
   useEffect(() => {
     setSliderValue(price || 100);
