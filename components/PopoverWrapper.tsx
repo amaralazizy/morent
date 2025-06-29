@@ -16,6 +16,7 @@ interface PopoverWrapperProps {
   value: string | null | undefined;
   placeholder: string;
   children: React.ReactNode;
+  buttonClassName?: string;
 }
 
 export default function PopoverWrapper({
@@ -23,19 +24,20 @@ export default function PopoverWrapper({
   value,
   placeholder,
   children,
+  buttonClassName,
 }: Readonly<PopoverWrapperProps>) {
   const [open, setOpen] = useState(false);
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger className={cn("w-full", className)} asChild>
         <Button
-          className="has-[>svg]:p-0 overflow-hidden flex justify-between"
+          className={cn("has-[>svg]:p-0 overflow-hidden flex justify-between", buttonClassName)}
           variant="outline"
           role="combobox"
           aria-expanded={open}
         >
-          <span className="truncate">{value ? value : placeholder}</span>
-          <ChevronDown className="h-[14px] aspect-square text-black" />
+          <span className={`truncate ${value ? "text-black" : "text-secondary-300"}`}>{value ? value : placeholder}</span>
+          <ChevronDown className="h-[14px] aspect-square text-black"/>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-full p-2">

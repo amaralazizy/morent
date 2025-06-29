@@ -7,6 +7,8 @@ import { cn } from "../lib/utils";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useSearch } from "@/contexts/SearchContext";
 import { useEffect } from "react";
+import { Input } from "@/components/ui/input";
+
 export default function SearchBar({
   className,
 }: Readonly<{ className: string }>) {
@@ -62,7 +64,7 @@ export default function SearchBar({
       >
         <Search className="text-black  scale-140" />
       </Button>
-      <input
+      <Input
         type="text"
         className="outline-none placeholder:text-sm placeholder:text-secondary-400"
         placeholder="Search something here"
@@ -91,7 +93,7 @@ export function MobileSearchBar({
     <div className={cn("flex gap-2", className)}>
       <div className="flex items-center gap-5 border-1 border-secondary-200/40 px-6 py-3 rounded-lg flex-1">
         <Search className="text-secondary-400 max-sm:scale-80" />
-        <input
+        <Input
           type="text"
           className="outline-none placeholder:text-sm placehold:text-ellipsis placeholder:text-secondary-400 flex-1"
           placeholder="Search something here"

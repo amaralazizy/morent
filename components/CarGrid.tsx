@@ -7,7 +7,7 @@ export default function CarGrid({
   return (
     <div
       className={cn(
-        "grid grid-cols-[repeat(auto-fit,minmax(317px,max-content))] gap-4 mb-16 w-full justify-center",
+        "grid grid-cols-[repeat(auto-fill,minmax(317px,1fr))] gap-4 mb-16 w-full",
         className
       )}
     >

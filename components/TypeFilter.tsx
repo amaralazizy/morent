@@ -2,6 +2,8 @@
 import { useSearch } from "@/contexts/SearchContext";
 import { useState, useEffect } from "react";
 import { categories } from "@/data/database";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 export default function TypeFilter() {
   const { selectedTypes, setSelectedTypes } = useSearch();
@@ -24,17 +26,18 @@ export default function TypeFilter() {
     <div>
       <h2 className="text-lg font-semibold mb-4">Type</h2>
       {categories.map(({ name, count }) => (
-        <label key={name} className="flex items-center space-x-2 mb-2">
-          <input
+        <div key={name} className="flex items-center space-x-2 mb-2">
+          <Input
             type="checkbox"
             checked={selectedTypes.includes(name)}
             onChange={() => handleFilterChange(name)}
-            className="form-checkbox text-blue-500"
+            className="w-4 aspect-square text-blue-500"
+            id={name}
           />
-          <span className="text-gray-700">
+          <Label key={name} className="text-gray-700" htmlFor={name}>
             {name} ({count})
-          </span>
-        </label>
+          </Label>
+        </div>
       ))}
     </div>
   );

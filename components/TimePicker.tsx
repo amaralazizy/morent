@@ -1,3 +1,5 @@
+import { Input } from "@/components/ui/input";
+
 interface TimePickerProps {
   selectedTime: string | null;
   onSelect: (time: string) => void;
@@ -16,7 +18,7 @@ function TimePicker({
     }
   };
   return (
-    <input
+    <Input
       type="time"
       value={selectedTime || ""}
       onChange={(e) => onSelect(e.target.value)}

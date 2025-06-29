@@ -1,4 +1,4 @@
-"use client";
+
 import PickupDropoffSelector from "@/components/PickupDropoffSelector";
 import SearchResults from "@/components/SearchResults";
 

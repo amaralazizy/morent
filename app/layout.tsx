@@ -14,10 +14,12 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body
         className={`${plusJakarta.className} antialiased font-default box-border`}
       >
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen  mx-auto">
           <SearchProvider>
             <Navbar />
-            <main className="flex flex-1 overflow-hidden">{children}</main>
+            <main className="flex flex-1 overflow-hidden bg-default-background">
+              {children}
+            </main>
           </SearchProvider>
         </div>
         <Footer />

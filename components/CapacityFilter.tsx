@@ -1,7 +1,8 @@
 "use client";
 import { useSearch } from "@/contexts/SearchContext";
+import { Label } from "@/components/ui/label";
 import { memo } from "react";
-
+import { Input } from "@/components/ui/input";
 const capacities = [
   { name: "2 Person", count: 10 },
   { name: "4 Person", count: 14 },
@@ -23,17 +24,18 @@ function CapacityFilter() {
     <div>
       <h2 className="text-lg font-semibold mt-4 mb-2">Capacity</h2>
       {capacities.map(({ name, count }) => (
-        <label key={name} className="flex items-center space-x-2 mb-2">
-          <input
+        <div key={name} className="flex items-center space-x-2 mb-2">
+          <Input
             type="checkbox"
             checked={selectedCapacities.includes(name)}
             onChange={() => handleFilterChange(name)}
-            className="form-checkbox text-blue-500"
+            className="w-4 aspect-square text-blue-500"
+            id={name}
           />
-          <span className="text-gray-700">
+          <Label key={name} className="text-gray-700" htmlFor={name}>
             {name} ({count})
-          </span>
-        </label>
+          </Label>
+        </div>
       ))}
     </div>
   );

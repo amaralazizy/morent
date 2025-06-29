@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useSearch } from "@/contexts/SearchContext";
+import { Input } from "@/components/ui/input";
 
 export default function PriceFilter() {
   const { setPrice, price } = useSearch();
@@ -19,7 +20,7 @@ export default function PriceFilter() {
   return (
     <div>
       <h2 className="text-lg font-semibold mt-4 mb-2">Price</h2>
-      <input
+      <Input
         type="range"
         min={0}
         max={100}

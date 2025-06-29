@@ -3,8 +3,12 @@ import SearchBar, { MobileSearchBar } from "./SearchBar";
 import { Heart, Bell, Settings } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
+import SignInButton from "@/components/SignInButton";
+import { auth } from "@/auth";
+import SignOutButton from "@/components/SignOutButton";
 
-export default function Navbar() {
+export default async function Navbar() {
+  const session = await auth();
   const buttons = [
     {
       name: "Favourites",
@@ -39,10 +43,17 @@ export default function Navbar() {
               {button.icon}
             </button>
           ))}
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
-            <AvatarFallback>CN</AvatarFallback>
-          </Avatar>
+          {session ? (
+            <Avatar>
+              <AvatarImage src={session.user?.image || ""} />
+              <AvatarFallback>
+                {session.user?.name?.charAt(0)}
+              </AvatarFallback>
+            </Avatar>
+          ) : (
+            <SignInButton />
+          )}
+          {session && <SignOutButton />}
         </div>
       </div>
       <MobileSearchBar className="min-[920px]:hidden w-4/5" />

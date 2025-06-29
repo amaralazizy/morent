@@ -1,11 +1,12 @@
+"use client";
 import { useSearch } from "@/contexts/SearchContext";
 import { useEffect, useState } from "react";
 import { cars } from "@/data/database";
-import CarCard from "@/app/components/home/carCard";
+import CarCard from "@/components/CarCard";
 import CarCardSkeleton from "@/components/CarCardSkeleton";
 import CarGrid from "@/components/CarGrid";
 import { Car } from "@/types/database";
-import LocalLoading from "@/app/components/ui/localLoading";
+import Loading from "@/app/loading";
 
 export default function SearchResults() {
   const { search, selectedTypes, selectedCapacities, price } = useSearch();
@@ -17,7 +18,6 @@ export default function SearchResults() {
 
   const mockFetchResults = () => {
     try {
-      // First, get the count of results
       const filteredResults = cars.filter((car) => {
         return (
           car.name
@@ -32,16 +32,14 @@ export default function SearchResults() {
         );
       });
 
-      // Set the count and show skeletons
       setResultCount(filteredResults.length);
       setInitialLoading(false);
       setLoadingCards(true);
 
-      // Simulate loading individual card data with a delay
       setTimeout(() => {
         setResults(filteredResults);
         setLoadingCards(false);
-      }, 800); // Simulate API delay for card data
+      }, 800);
     } catch (error) {
       setError(true);
       setInitialLoading(false);
@@ -56,7 +54,6 @@ export default function SearchResults() {
     setResults([]);
     setResultCount(0);
 
-    // Initial search delay
     const timeoutId = setTimeout(() => {
       mockFetchResults();
     }, 500);
@@ -64,16 +61,8 @@ export default function SearchResults() {
     return () => clearTimeout(timeoutId);
   }, [search, selectedTypes, selectedCapacities, price]);
 
-  // Stage 1: Initial loading within search results area
   if (initialLoading) {
-    return (
-      <LocalLoading
-        text="Searching for cars..."
-        size="md"
-        theme="primary"
-        animationSpeed="normal"
-      />
-    );
+    return <Loading />;
   }
 
   // Error state

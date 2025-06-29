@@ -13,11 +13,12 @@ export default function CarDescription({
   className,
 }: Readonly<{ className?: string }>) {
   const { id } = useParams();
-  const [car, setCar] = useState<Car>(cars[0]);
+  // const [car, setCar] = useState<Car>(cars[0]);
+  const car = cars.find((car) => car.id === id) || cars[0];
 
-  useEffect(() => {
-    setCar(cars.find((car) => car.id === id) || cars[0]);
-  }, [id]);
+  // useEffect(() => {
+  //   setCar(cars.find((car) => car.id === id) || cars[0]);
+  // }, [id]);
 
   const router = useRouter();
 
@@ -90,8 +91,8 @@ export default function CarDescription({
           )}
         </div>
         <Button
-          className="text-white px-8 py-4 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer"
-          onClick={() => router.push(`/rent/${car.id}`)}
+          className="text-white px-8 py-4 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer h-fit"
+          onClick={() => router.push(`/car/${car.id}/rent`)}
         >
           Rent Now
         </Button>

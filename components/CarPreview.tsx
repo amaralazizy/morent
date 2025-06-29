@@ -1,5 +1,5 @@
 "use client";
-import SloganCard from "./home/sloganCard";
+import SloganCard from "@/components/SloganCard";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -85,7 +85,7 @@ export default function CarPreview({
         {renderMainImage()}
       </div>
       <div className="flex justify-between">
-        {Object.entries(carDetails).map(([key, img]) => {
+        {Object.entries(carDetails).map(([_, img]) => {
           const isSelected = selectedImage === img.src;
           const borderSquare = isSelected ? "" : "before:opacity-0";
           const common =
