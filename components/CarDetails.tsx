@@ -1,5 +1,5 @@
-import CarPreview from "./CarPreview";
-import CarDescription from "./CarDescription";
+import CarPreview from "@/components/CarPreview";
+import CarDescription from "@/components/CarDescription";
 export default function CarDetails() {
   
 

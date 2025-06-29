@@ -1,5 +1,5 @@
-import Logo from "./Logo";
-import SearchBar, { MobileSearchBar } from "./SearchBar";
+import Logo from "@/components/Logo";
+import SearchBar, { MobileSearchBar } from "@/components/SearchBar";
 import { Heart, Bell, Settings } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";

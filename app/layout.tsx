@@ -1,5 +1,5 @@
-import "./globals.css";
-import Navbar from "../components/Navbar";
+import "@/app/globals.css";
+import Navbar from "@/components/Navbar";
 import { ReactScan } from "@/app/ReactScan";
 import Footer from "@/components/Footer";
 import { plusJakarta } from "@/fonts";

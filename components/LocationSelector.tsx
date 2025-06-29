@@ -1,4 +1,4 @@
-import TripLocationCard from "./TripLocationCard";
+import TripLocationCard from "@/components/TripLocationCard";
 import { DeliveryInfoType } from "@/types";
 
 type LocationSelectorProps<T extends "pickup" | "dropoff"> = {

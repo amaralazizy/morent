@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 export default function RentalButton({ buttonColor }: { buttonColor: string }) {
   const router = useRouter();

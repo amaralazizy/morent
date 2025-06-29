@@ -1,6 +1,6 @@
 "use client";
-import { Button } from "./ui/button";
-import CustomerReview from "./CustomerReview";
+import { Button } from "@/components/ui/button";
+import CustomerReview from "@/components/CustomerReview";
 import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 

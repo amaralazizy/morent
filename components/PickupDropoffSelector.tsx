@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowUpDown } from "lucide-react";
-import TripLocationCard from "./TripLocationCard";
+import TripLocationCard from "@/components/TripLocationCard";
 import { useState, memo } from "react";
 import { DeliveryInfoType } from "@/types";
 import { cn } from "@/lib/utils";

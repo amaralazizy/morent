@@ -1,6 +1,6 @@
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import DotHeading from "./DotHeading";
+import DotHeading from "@/components/DotHeading";
 import Image from "next/image";
 
 const inputFields = [

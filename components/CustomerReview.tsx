@@ -1,5 +1,5 @@
 import { StarIcon } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import RatingStarIcons from "@/components/StarIcons";
 export default function CustomerReview() {
   return (

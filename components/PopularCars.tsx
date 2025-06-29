@@ -1,10 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import CarCard from "./CarCard";
 import { cars } from "@/data/database";
-import { useState, Suspense } from "react";
-import CarCardSkeleton from "@/components/CarCardSkeleton";
-import CarGrid from "@/components/CarGrid";
+import { useState } from "react";
 import AllCars from "@/components/AllCars";
 type PopularCarsProps = {
   className?: string;

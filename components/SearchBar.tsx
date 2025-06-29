@@ -1,9 +1,8 @@
 "use client";
 
-// import { useSidebar } from "../context/SidebarContext";
 import { Settings2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "../lib/utils";
+import { cn } from "@/lib/utils";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useSearch } from "@/contexts/SearchContext";
 import { useEffect } from "react";
