@@ -46,9 +46,7 @@ export default async function Navbar() {
           {session ? (
             <Avatar>
               <AvatarImage src={session.user?.image || ""} />
-              <AvatarFallback>
-                {session.user?.name?.charAt(0)}
-              </AvatarFallback>
+              <AvatarFallback>{session.user?.name?.charAt(0)}</AvatarFallback>
             </Avatar>
           ) : (
             <SignInButton />
