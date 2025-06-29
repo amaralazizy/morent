@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 import { plusJakarta } from "@/fonts";
 import { SearchProvider } from "@/contexts/SearchContext";
 import { PropsWithChildren } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en">
-      <head>
-        {/* <ReactScan /> */}
-      </head>
+      <head>{/* <ReactScan /> */}</head>
       <body
         className={`${plusJakarta.className} antialiased font-default box-border`}
       >
@@ -19,6 +19,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
             <Navbar />
             <main className="flex flex-1 overflow-hidden bg-default-background">
               {children}
+              <SpeedInsights />
             </main>
           </SearchProvider>
         </div>
