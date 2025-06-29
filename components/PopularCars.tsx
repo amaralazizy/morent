@@ -6,13 +6,13 @@ import AllCars from "@/components/AllCars";
 type PopularCarsProps = {
   className?: string;
   title?: "Popular" | "Recent";
-  showAll?: boolean;
+  // showAll?: boolean;
 };
 
 export default function PopularCars({
   className,
   title = "Popular",
-  showAll = false,
+  // showAll = false,
 }: Readonly<PopularCarsProps>) {
   const [carsToBeShown, setCarsToBeShown] = useState(9);
   function handleShowMore() {
@@ -25,7 +25,7 @@ export default function PopularCars({
   }
 
   return (
-    <div>
+    <div className={className}>
       <div className="flex items-center justify-between w-full px-5 py-2.5">
         <h2 className="font-semibold text-secondary-300">{title} Cars</h2>
         <a href="/cars" className="text-primary-500 font-semibold">

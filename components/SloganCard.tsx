@@ -51,7 +51,7 @@ export default function SloganCard({
       >
         <h2 className={styles.header}>{header}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        {showButton && <RentalButton buttonColor={buttonColor} />}
+        {showButton && <RentalButton buttonColor={buttonColor} route="cars" buttonText="Rental Car" className="mt-[30px]" />}
       </div>
       <div
         className={cn(

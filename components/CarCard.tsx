@@ -1,19 +1,21 @@
-"use client";
+// "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Like from "@/components/Like";
 import { Fuel, LifeBuoy, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Car } from "@/types/database";
-import { useRouter } from "next/navigation";
+import RentalButton from "@/components/RentalButton";
+import CarImageLink from "@/components/CarImageLink";
+// import { useRouter } from "next/navigation";
 export interface CarCardProps {
   car: Car;
   className?: string;
 }
 
 export default function CarCard({ car, className }: CarCardProps) {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div className={cn("p-6 bg-white rounded-[10px]", className)}>
       <div className="flex justify-between mb-16">
@@ -23,20 +25,7 @@ export default function CarCard({ car, className }: CarCardProps) {
         </div>
         <Like />
       </div>
-      <div
-        className="relative px-9 mb-16 cursor-pointer"
-        onClick={() => router.push(`/car/${car.id}`)}
-      >
-        <Image
-          src="/car1.png"
-          // src={car.image}
-          alt="Car"
-          width={250}
-          height={170}
-          className="rounded-[10px] object-cover mx-auto"
-        />
-        <div className="bg-gradient-to-b from-transparent to-white h-full w-full absolute top-1/3 left-0 overflow-hidden"></div>
-      </div>
+      <CarImageLink car={car} />
       <div className="flex text-sm text-secondary-300 justify-around mb-8">
         <div className="flex justify-between items-center gap-1.5">
           <Fuel />
@@ -65,12 +54,7 @@ export default function CarCard({ car, className }: CarCardProps) {
             </span>
           )}
         </div>
-        <Button
-          className="text-white px-5 py-2.5 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer"
-          onClick={() => router.push(`/car/${car.id}`)}
-        >
-          Rent Now
-        </Button>
+        <RentalButton buttonColor="bg-primary-500" route={`/car/${car.id}/rent`} buttonText="Rent Now" />
       </div>
     </div>
   );

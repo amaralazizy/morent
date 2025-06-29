@@ -10,12 +10,12 @@ const inputFields = [
   { label: "CVV", id: "cvv", placeholder: "CVV" },
 ];
 
-const paymentMethods = [
-  { label: "Credit Card", id: "credit-card", icon: "/visa_logo.png" },
-  { label: "Debit Card", id: "debit-card", icon: "/mastercard_logo.png" },
-  { label: "Paypal", id: "paypal", icon: "/PayPal.png" },
-  { label: "Apple Pay", id: "apple-pay", icon: "/apple_pay.png" },
-];
+// const paymentMethods = [
+//   { label: "Credit Card", id: "credit-card", icon: "/visa_logo.png" },
+//   { label: "Debit Card", id: "debit-card", icon: "/mastercard_logo.png" },
+//   { label: "Paypal", id: "paypal", icon: "/PayPal.png" },
+//   { label: "Apple Pay", id: "apple-pay", icon: "/apple_pay.png" },
+// ];
 
 export default function PaymentMethod() {
   return (

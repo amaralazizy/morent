@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getCount<T extends { [key: string]: any }>(
+export function getCount<T extends { [key: string]: unknown }>(
   arr: T[],
   attribute: keyof T,
   value: string

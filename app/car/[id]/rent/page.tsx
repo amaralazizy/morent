@@ -1,14 +1,14 @@
 // import { useParams } from "next/navigation";
 // import { useState, useEffect } from "react";
-import { Car } from "@/types/database";
-import { cars } from "@/data/database";
+// import { Car } from "@/types/database";
+// import { cars } from "@/data/database";
 import CarRentCard from "@/components/CarRentCard";
 import RentForm from "@/components/RentForm";
 
 export default function RentPage({ params }: { params: { id: string } }) {
   const { id } = params;
   // const [car, setCar] = useState<Car | undefined>(undefined);
-  const car: Car | undefined = cars.find((car) => car.id === id);
+  // const car: Car | undefined = cars.find((car) => car.id === id);
 
   // useEffect(() => {
   //   setCar(cars.find((car) => car.id === id));

@@ -22,8 +22,8 @@ export default function NotFound() {
           Page Not Found
         </h2>
         <p className="text-gray-500 mb-8 text-center max-w-md">
-          Oops! The page you're looking for doesn't exist or has been moved.
-          Let's get you back home.
+          Oops! The page you&apos;re looking for doesn&apos;t exist or has been
+          moved. Let&apos;s get you back home.
         </p>
         <Link href="/">
           <span className="inline-block px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg shadow hover:bg-primary-500/90 transition-colors">

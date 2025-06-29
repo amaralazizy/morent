@@ -1,18 +1,20 @@
-"use client";
+// "use client";
 import { cn } from "@/lib/utils";
 import { cars } from "@/data/database";
-import { Car } from "@/types/database";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+// import { Car } from "@/types/database";
+// import { useParams } from "next/navigation";
+// import { useEffect, useState } from "react";
 import Like from "@/components/Like";
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
+// import { Button } from "@/components/ui/button";
+// import { redirect } from "next/navigation";
 import RatingStarIcons from "@/components/StarIcons";
+import RentalButton from "@/components/RentalButton";
 
 export default function CarDescription({
   className,
-}: Readonly<{ className?: string }>) {
-  const { id } = useParams();
+  id,
+}: Readonly<{ className?: string; id: string }>) {
+  // const { id } = useParams();
   // const [car, setCar] = useState<Car>(cars[0]);
   const car = cars.find((car) => car.id === id) || cars[0];
 
@@ -20,7 +22,7 @@ export default function CarDescription({
   //   setCar(cars.find((car) => car.id === id) || cars[0]);
   // }, [id]);
 
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <div
@@ -90,12 +92,7 @@ export default function CarDescription({
             </span>
           )}
         </div>
-        <Button
-          className="text-white px-8 py-4 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer h-fit"
-          onClick={() => router.push(`/car/${car.id}/rent`)}
-        >
-          Rent Now
-        </Button>
+        <RentalButton buttonColor="bg-primary-500" route={`/car/${car.id}/rent`} buttonText="Rent Now" />
       </div>
     </div>
   );

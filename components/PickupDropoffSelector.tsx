@@ -11,8 +11,10 @@ import { cn } from "@/lib/utils";
     a: DeliveryInfoType<"pickup">,
     b: DeliveryInfoType<"dropoff">
   ) {
-    const { type: _, ...restA } = a;
-    const { type: __, ...restB } = b;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { type: _a, ...restA } = a;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { type: _b, ...restB } = b;
     
     return JSON.stringify(restA) !== JSON.stringify(restB);
   }

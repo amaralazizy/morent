@@ -85,7 +85,8 @@ export default function CarPreview({
         {renderMainImage()}
       </div>
       <div className="flex justify-between">
-        {Object.entries(carDetails).map(([_, img]) => {
+        {Object.entries(carDetails).map(([key, img]) => {
+          console.log(key);
           const isSelected = selectedImage === img.src;
           const borderSquare = isSelected ? "" : "before:opacity-0";
           const common =
