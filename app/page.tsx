@@ -4,9 +4,9 @@ import SloganCard from "@/components/SloganCard";
 
 export default function Home() {
   return (
-    <div className="p-8 flex-1  max-[920px]:relative max-sm:px-[10%] overflow-x-hidden overflex-y-scroll flex flex-col gap-8">
+    <div className="py-8 px-[10%] flex-1 flex flex-col gap-8">
         <div className="flex">
-          <div className="hidden absolute w-full h-[116px] top-0 left-0 bg-white max-[920px]:block"></div>
+          {/* <div className="hidden absolute w-full h-[116px] top-0 left-0 bg-white max-[920px]:block"></div> */}
           <section className="w-full flex flex-wrap gap-8">
             <SloganCard
               header="The Best Platform for Car Rental"

@@ -18,7 +18,8 @@ type TripLocationCardProps = {
 };
 const variantStyles: Record<string, Record<string, string>> = {
   default: {
-    inputFields: "grid grid-cols-3 divide-x divide-secondary-300 items-center",
+    inputFields:
+      "grid grid-cols-3 divide-x divide-secondary-300 items-center @max-md:grid-cols-1 @max-md:divide-x-0",
     inputLabel: "flex flex-col px-4",
     label: "text-secondary-500 font-bold",
     popoverButton: "",
@@ -59,7 +60,7 @@ function TripLocationCard({
 
   return (
     <div
-      className={cn("px-8 py-6 rounded-[10px] shadow-sm bg-white", className)}
+      className={cn("px-8 py-6 rounded-[10px] shadow-sm bg-white @container/trip-location-card", className)}
     >
       <DotHeading variant="rentForm">{typeVariant.heading}</DotHeading>
 

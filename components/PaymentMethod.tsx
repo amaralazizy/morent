@@ -45,7 +45,7 @@ export default function PaymentMethod() {
         <div className="grid grid-cols-2 gap-8">
           {inputFields.map(({ label, id, placeholder }) => (
             <div className="flex flex-col gap-4" key={id}>
-              <Label htmlFor={id} className="font-semibold text-[1rem]">
+              <Label htmlFor={id} className="font-semibold text-base">
                 {label}
               </Label>
               <Input
@@ -61,7 +61,7 @@ export default function PaymentMethod() {
       <div className="flex items-center justify-between px-8 py-4 rounded-lg bg-default-background mb-6">
         <div className="flex gap-5 items-center">
           <Input type="radio" id="paypal" className="w-6 h-6" />
-          <Label className="font-semibold text-[1rem]" htmlFor="paypal">
+          <Label className="font-semibold text-base" htmlFor="paypal">
             PayPal
           </Label>
         </div>
@@ -73,7 +73,7 @@ export default function PaymentMethod() {
       >
         <div className="flex gap-5 items-center">
           <Input type="radio" id="apple-pay" className="w-6 h-6" />
-          <Label className="font-semibold text-[1rem]" htmlFor="apple-pay">
+          <Label className="font-semibold text-base" htmlFor="apple-pay">
             Apple Pay
           </Label>
         </div>

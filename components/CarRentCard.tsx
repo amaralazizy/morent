@@ -3,8 +3,8 @@ import { carDetails } from "@/data/database";
 import { cn } from "@/lib/utils";
 import { cars } from "@/data/database";
 import RatingStarIcons from "@/components/StarIcons";
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 const { imgClass, bg } = carDetails.exterior;
 
 export default function CarRentCard({
@@ -67,14 +67,16 @@ export default function CarRentCard({
           placeholder="Apply promo code"
           className="input_primary !rounded-r-none  !h-full"
         />
-        <Button className="bg-default-background text-secondary-500 hover:bg-default-background hover:text-secondary-500 shadow-none border-none font-semibold text-[1rem] h-full rounded-l-none">
+        <Button className="bg-default-background text-secondary-500 hover:bg-default-background hover:text-secondary-500 shadow-none border-none font-semibold text-base h-full rounded-l-none">
           Apply now
         </Button>
       </div>
       <div className="flex justify-between">
         <div>
           <h4 className="text-xl font-bold mb-1">Total Rental Price</h4>
-          <p className="text-sm text-secondary-300">Overall price and includes rental discount</p>
+          <p className="text-sm text-secondary-300">
+            Overall price and includes rental discount
+          </p>
         </div>
         <span className="text-[2rem] font-bold">${car?.price}</span>
       </div>

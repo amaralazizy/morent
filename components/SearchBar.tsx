@@ -7,10 +7,11 @@ import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useSearch } from "@/contexts/SearchContext";
 import { useEffect } from "react";
 import { Input } from "@/components/ui/input";
+// import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function SearchBar({
   className,
-}: Readonly<{ className: string }>) {
+}: Readonly<{ className?: string }>) {
   const {
     search,
     setSearch,
@@ -65,7 +66,7 @@ export default function SearchBar({
       </Button>
       <Input
         type="text"
-        className="outline-none placeholder:text-sm placeholder:text-secondary-400"
+        className="outline-none placeholder:text-[calc(0.375rem+0.625vw)] placeholder:text-secondary-400 focus-visible:ring-primary-500  border-none"
         placeholder="Search something here"
         name="search"
         onChange={(e) => {
@@ -87,21 +88,22 @@ export default function SearchBar({
 
 export function MobileSearchBar({
   className,
-}: Readonly<{ className: string }>) {
+}: Readonly<{ className?: string }>) {
+  // const isMobile = useIsMobile();
   return (
-    <div className={cn("flex gap-2", className)}>
+    <div className={cn("flex gap-4 w-full", className)}>
       <div className="flex items-center gap-5 border-1 border-secondary-200/40 px-6 py-3 rounded-lg flex-1">
         <Search className="text-secondary-400 max-sm:scale-80" />
         <Input
           type="text"
-          className="outline-none placeholder:text-sm placehold:text-ellipsis placeholder:text-secondary-400 flex-1"
+          className="outline-none placeholder:text-[2vw] placeholder:text-secondary-400 flex-1 border-none shadow-none "
           placeholder="Search something here"
         />
       </div>
       <div>
-        <button className="bg-white hover:bg-transparent cursor-pointer border-1 border-secondary-200/40 rounded-lg p-3 h-full aspect-square">
-          <Settings2 className="text-secondary-400" />
-        </button>
+        <Button className="bg-white hover:bg-transparent cursor-pointer border-1 border-secondary-200/40 rounded-lg p-3 h-full aspect-square">
+          <Settings2 className="text-secondary-400 scale-140" />
+        </Button>
       </div>
     </div>
   );

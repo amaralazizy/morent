@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import RentalButton from "@/components/RentalButton";
+import Link from "next/link";
+
 type SloganCardProps = {
   header: string;
   paragraph: string;
@@ -27,7 +28,7 @@ export default function SloganCard({
     hero: {
       header:
         "text-[calc(0.25rem+1.8vw)] font-semibold tracking-tight mb-4 max-[820px]:text-3xl max-sm:text-xl",
-      paragraph: "text-base",
+      paragraph: "text-base mb-6",
       container: "h-[224px] max-w-[272px]",
     },
     details: {
@@ -47,11 +48,18 @@ export default function SloganCard({
       )}
     >
       <div
-        className={`${styles.container} text-white ml-6  max-[820px]:ml-0 max-[820px]:min-w-full`}
+        className={`${styles.container} text-white ml-6 max-[820px]:ml-0 max-[820px]:min-w-full`}
       >
         <h2 className={styles.header}>{header}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        {showButton && <RentalButton buttonColor={buttonColor} route="cars" buttonText="Rental Car" className="mt-[30px]" />}
+        {showButton && (
+          <Link
+            href="/cars"
+            className={`py-2.5 px-5 rounded-[4px] ${buttonColor} text-white cursor-pointer hover:${buttonColor} origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-md`}
+          >
+            Rental Car
+          </Link>
+        )}
       </div>
       <div
         className={cn(

@@ -8,7 +8,7 @@ import Like from "@/components/Like";
 // import { Button } from "@/components/ui/button";
 // import { redirect } from "next/navigation";
 import RatingStarIcons from "@/components/StarIcons";
-import RentalButton from "@/components/RentalButton";
+import RentalButton from "@/components/ClientButton";
 
 export default function CarDescription({
   className,
@@ -92,7 +92,11 @@ export default function CarDescription({
             </span>
           )}
         </div>
-        <RentalButton buttonColor="bg-primary-500" route={`/car/${car.id}/rent`} buttonText="Rent Now" />
+        <RentalButton
+          buttonColor="bg-primary-500"
+          route={`/car/${car.id}/rent`}
+          buttonText="Rent Now"
+        />
       </div>
     </div>
   );

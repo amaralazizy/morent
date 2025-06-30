@@ -2,12 +2,13 @@
 import { Car } from "@/types/database";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
-export default function CarImageLink({ car }: { car: Car }) {
+export default function CarImageLink({ car, className }: { car: Car; className?: string }) {
     const router = useRouter();
     return (
       <div
-        className="relative px-9 mb-16 cursor-pointer"
+        className={cn("relative px-9 mb-16 cursor-pointer", className)}
         onClick={() => router.push(`/car/${car.id}`)}
       >
         <Image

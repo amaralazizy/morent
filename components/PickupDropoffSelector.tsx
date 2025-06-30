@@ -5,6 +5,7 @@ import TripLocationCard from "@/components/TripLocationCard";
 import { useState, memo } from "react";
 import { DeliveryInfoType } from "@/types";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
  function PickupDropoffSelector({className, switchClassName}: Readonly<{className?: string, switchClassName?: string}>) {
   function isInfoDifferent(
@@ -45,7 +46,7 @@ import { cn } from "@/lib/utils";
   
 
   return (
-    <div className={cn("flex gap-11 items-center", className)}>
+    <div className={cn("flex gap-11 items-center max-[1220px]:grid max-[1220px]:gap-0", className)}>
       <TripLocationCard
         className="flex-1"
         setDeliveryInfo={(val) =>
@@ -59,7 +60,7 @@ import { cn } from "@/lib/utils";
       />
       <button
         className={cn(
-          "w-15 aspect-square bg-primary-500 flex items-center justify-center rounded-[10px] cursor-pointer",
+          "z-2 w-15 aspect-square bg-primary-500 flex items-center justify-center rounded-[10px] cursor-pointer max-[1220px]:-my-4 max-[1220px]:shadow-2xl/50 max-[1220px]:shadow-primary-500 max-[1220px]:mx-auto",
           switchClassName
         )}
         onClick={handleSwitch}
