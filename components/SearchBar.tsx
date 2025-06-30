@@ -96,7 +96,7 @@ export function MobileSearchBar({
         <Search className="text-secondary-400 max-sm:scale-80" />
         <Input
           type="text"
-          className="outline-none placeholder:text-[2vw] placeholder:text-secondary-400 flex-1 border-none shadow-none "
+          className="outline-none placeholder:text-[calc(0.25rem+2vw)] placeholder:text-secondary-400 flex-1 border-none shadow-none "
           placeholder="Search something here"
         />
       </div>
