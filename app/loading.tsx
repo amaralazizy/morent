@@ -22,11 +22,11 @@ export default function Loading() {
           </div>
 
           {/* Car */}
-          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-car-bounce">
+          <div className="absolute bottom-2 left-1/2 transform animate-car-bounce">
             <svg
               width="80"
               height="40"
-              viewBox="0 0 100 50"
+              viewBox="0 0 80 50"
               className="fill-primary-500"
             >
               {/* Car Body */}
