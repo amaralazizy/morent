@@ -1,28 +1,15 @@
 // "use client";
 import { cn } from "@/lib/utils";
 import { cars } from "@/data/database";
-// import { Car } from "@/types/database";
-// import { useParams } from "next/navigation";
-// import { useEffect, useState } from "react";
 import Like from "@/components/Like";
-// import { Button } from "@/components/ui/button";
-// import { redirect } from "next/navigation";
 import RatingStarIcons from "@/components/StarIcons";
-import RentalButton from "@/components/ClientButton";
+import Link from "next/link";
 
 export default function CarDescription({
   className,
   id,
 }: Readonly<{ className?: string; id: string }>) {
-  // const { id } = useParams();
-  // const [car, setCar] = useState<Car>(cars[0]);
   const car = cars.find((car) => car.id === id) || cars[0];
-
-  // useEffect(() => {
-  //   setCar(cars.find((car) => car.id === id) || cars[0]);
-  // }, [id]);
-
-  // const router = useRouter();
 
   return (
     <div
@@ -77,7 +64,7 @@ export default function CarDescription({
           </span>
         </div>
       </div>
-      {/* TODO Seperate this into individual component and use it  here and CarCard */}
+      {/* TODO: Seperate this into individual component and use it  here and CarCard */}
       <div className="flex gap-6 justify-between">
         <div>
           <p>
@@ -92,11 +79,12 @@ export default function CarDescription({
             </span>
           )}
         </div>
-        <RentalButton
-          buttonColor="bg-primary-500"
-          route={`/car/${car.id}/rent`}
-          buttonText="Rent Now"
-        />
+        <Link
+          href={`/car/${car.id}/rent`}
+          className="py-2.5 px-5 rounded-[4px] bg-primary-500 text-white cursor-pointer hover:bg-primary-500 origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-md text-center"
+        >
+          Rent Now
+        </Link>
       </div>
     </div>
   );

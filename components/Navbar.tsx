@@ -14,15 +14,25 @@ import MenuButton from "@/components/MenuButton";
 const buttons = [
   {
     name: "Favourites",
-    icon: <Heart className="w-5 h-[18px] text-secondary-400" fill="#596780" />,
+    icon: (
+      <Heart
+        className="w-5 h-[18px] text-secondary-400 scale-120"
+        fill="#596780"
+      />
+    ),
   },
   {
     name: "Notifications",
-    icon: <Bell className="w-5 h-[18px] text-secondary-400" fill="#596780" />,
+    icon: (
+      <Bell
+        className="w-5 h-[18px] text-secondary-400 scale-120"
+        fill="#596780"
+      />
+    ),
   },
   {
     name: "Settings",
-    icon: <Settings className="w-5 h-[18px] text-secondary-400" />,
+    icon: <Settings className="w-5 h-[18px] text-secondary-400 scale-120" />,
   },
 ];
 
@@ -47,7 +57,7 @@ export async function Navbar({ className }: Readonly<{ className?: string }>) {
           {buttons.map((button) => (
             <Button
               key={button.name}
-              className="p-2.5 border-1 border-secondary-200/40 rounded-full cursor-pointer max-lg:hidden"
+              className="border-1 border-secondary-200/40 rounded-full cursor-pointer max-lg:hidden bg-transparent hover:bg-transparent py-5"
             >
               {button.icon}
             </Button>
@@ -85,7 +95,9 @@ export async function MobileNavBar({
           <SignInButton />
         )}
       </div>
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
       <MobileSearchBar />
     </nav>
   );
