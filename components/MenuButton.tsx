@@ -2,7 +2,7 @@
 
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import ClientButton from "@/components/ClientButton";
 import SideNavBar from "@/components/SideNavBar";
 
@@ -18,7 +18,7 @@ export default function MenuButton() {
         <Menu className="text-primary-500 scale-140" />
       </ClientButton>
       <SideNavBar
-        className={cn("transition-all duration-500 ease-in-out", open ? "translate-x-0" : "-translate-x-full")}
+        open={open}
         setOpen={setOpen}
       />
     </>

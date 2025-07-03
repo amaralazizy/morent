@@ -46,7 +46,7 @@ import { cn } from "@/lib/utils";
   
 
   return (
-    <div className={cn("flex gap-11 items-center max-[1220px]:grid max-[1220px]:gap-0", className)}>
+    <div className={cn("flex gap-11 items-center max-[1220px]:grid max-[1220px]:gap-8", className)}>
       <TripLocationCard
         className="flex-1"
         setDeliveryInfo={(val) =>

@@ -1,21 +1,32 @@
 "use client";
-
-import { createContext, useContext, useState } from "react";
+// import { useMediaQuery } from "@/hooks/use-mediaquery";
+import { createContext, useContext, useState, useCallback } from "react";
 
 interface SidebarContextType {
-  isOpen: boolean;
+  showSidebar: boolean;
   toggleSidebar: () => void;
 }
 
-const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
+const SidebarContext = createContext<SidebarContextType>({
+  showSidebar: false,
+  toggleSidebar: () => {},
+});
 
 export function SidebarProvider({ children }: { children: React.ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => setIsOpen((prevIsOpen) => !prevIsOpen);
+  // const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const [showSidebar, setShowSidebar] = useState(false);
+  const toggleSidebar = useCallback(() => {
+    console.log("toggleSidebar");
+    setShowSidebar((prev) => !prev);
+  }, [setShowSidebar]);
 
   return (
-    <SidebarContext.Provider value={{ isOpen, toggleSidebar }}>
+    <SidebarContext.Provider
+      value={{
+        showSidebar,
+        toggleSidebar,
+      }}
+    >
       {children}
     </SidebarContext.Provider>
   );
@@ -23,8 +34,11 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
 
 export function useSidebar() {
   const context = useContext(SidebarContext);
+  // console.log("no error");
   if (!context) {
-    throw new Error("useSidebar must be used within a SidebarProvider");
+    throw new Error("useSidebar must be used within a SidebarProvider", {
+      cause: "SidebarProvider not found",
+    });
   }
   return context;
 }
