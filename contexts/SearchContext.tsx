@@ -2,8 +2,9 @@
 "use client";
 
 import React, { createContext, useContext, useState, useCallback } from "react";
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import debounce from "lodash/debounce";
+import { useRouter } from "next/navigation";
 
 interface SearchContextType {
   search: string;
@@ -32,7 +33,9 @@ const SearchContext = createContext<SearchContextType>({
 export const useSearch = () => {
   const context = useContext(SearchContext);
   if (!context) {
-    throw new Error("useSearch must be used within a SearchProvider", { cause: "SearchProvider not found" });
+    throw new Error("useSearch must be used within a SearchProvider", {
+      cause: "SearchProvider not found",
+    });
   }
   return context;
 };
@@ -42,25 +45,23 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedCapacities, setSelectedCapacities] = useState<string[]>([]);
   const [price, setPrice] = useState<number | null>(null);
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
+  const router = useRouter();
 
-  // Create a debounced function that handles the search logic
-  const debouncedSearch = debounce(() => {
-    const params = new URLSearchParams(searchParams);
-    if (search !== "") {
-      params.set("query", search.toString());
-      if (selectedTypes.length > 0) params.set("type", selectedTypes.join(","));
-      if (selectedCapacities.length > 0)
+  const handleSearch = useCallback(
+    debounce(() => {
+      const params = new URLSearchParams();
+      if (search) params.set("query", search);
+      if (selectedTypes.length) params.set("type", selectedTypes.join(","));
+      if (selectedCapacities.length)
         params.set("capacity", selectedCapacities.join(","));
-      if (price) params.set("price", price.toString());
-    }
-    window.location.href = `/search?${params.toString()}`;
-  }, 500);
+      if (price !== null) params.set("price", price.toString());
 
-  // Create memoized version of the debounced function
-  const handleSearch = useCallback(() => {
-    debouncedSearch();
-  }, [debouncedSearch]);
+      router.push(`/search?${params.toString()}`);
+    }, 500),
+    [search, selectedTypes, selectedCapacities, price]
+  );
+
   return (
     <SearchContext.Provider
       value={{

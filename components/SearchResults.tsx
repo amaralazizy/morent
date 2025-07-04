@@ -6,12 +6,12 @@ import CarCard from "@/components/CarCard";
 import CarCardSkeleton from "@/components/CarCardSkeleton";
 import CarGrid from "@/components/CarGrid";
 import { Car } from "@/types/database";
-import Loading from "@/app/loading";
+// import Loading from "@/app/loading";
 
 export default function SearchResults() {
   const { search, selectedTypes, selectedCapacities, price } = useSearch();
   const [results, setResults] = useState<Car[]>([]);
-  const [initialLoading, setInitialLoading] = useState(true);
+  // const [initialLoading, setInitialLoading] = useState(true);
   const [loadingCards, setLoadingCards] = useState(false);
   const [resultCount, setResultCount] = useState(0);
   const [error, setError] = useState(false);
@@ -33,7 +33,7 @@ export default function SearchResults() {
       });
 
       setResultCount(filteredResults.length);
-      setInitialLoading(false);
+      // setInitialLoading(false);
       setLoadingCards(true);
 
       setTimeout(() => {
@@ -42,14 +42,14 @@ export default function SearchResults() {
       }, 800);
     } catch (error) {
       setError(true);
-      setInitialLoading(false);
+      // setInitialLoading(false);
       setLoadingCards(false);
       throw error;
     }
   };
 
   useEffect(() => {
-    setInitialLoading(true);
+    // setInitialLoading(true);
     setLoadingCards(false);
     setError(false);
     setResults([]);
@@ -62,9 +62,9 @@ export default function SearchResults() {
     return () => clearTimeout(timeoutId);
   }, [search, selectedTypes, selectedCapacities, price]);
 
-  if (initialLoading) {
-    return <Loading />;
-  }
+  // if (initialLoading) {
+  //   return <Loading />;
+  // }
 
   // Error state
   if (error) {

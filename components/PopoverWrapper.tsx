@@ -40,7 +40,7 @@ export default function PopoverWrapper({
           <ChevronDown className="h-[14px] aspect-square text-black"/>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-full p-2">
+      <PopoverContent className="w-full p-0">
         {Children.map(children, (child) =>
           isValidElement(child)
             ? cloneElement(

@@ -10,7 +10,8 @@ import { useEffect } from "react";
 import { useSearch } from "@/contexts/SearchContext";
 import { usePathname } from "next/navigation";
 import { useSidebar } from "@/contexts/SidebarContext";
-import debounce from "lodash/debounce";
+import { useSearchParams } from "next/navigation";
+
 
 export default function SearchBar({
   className,
@@ -18,20 +19,29 @@ export default function SearchBar({
   const {
     search,
     setSearch,
-    selectedTypes,
-    selectedCapacities,
-    price,
+    // selectedTypes,
+    // selectedCapacities,
+    // price,
     setSelectedTypes,
     setSelectedCapacities,
     setPrice,
     handleSearch,
   } = useSearch();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
-  const debouncedSetSearch = debounce((query: string) => {
-    setSearch(query);
-  }, 500);
   // const {toggleSidebar} = useSidebar();
+
+  useEffect(() => {
+    setSearch(searchParams.get("query") || "");
+    setSelectedTypes(searchParams.get("type")?.split(",") || []);
+    setSelectedCapacities(searchParams.get("capacity")?.split(",") || []);
+    setPrice(Number(searchParams.get("price")) || null);
+  }, [searchParams]);
+
+  // useEffect(() => {
+  //   if (pathname === "/search") handleSearch();
+  // }, [price, selectedTypes, selectedCapacities, pathname, search]);
 
   // useEffect(() => {
   //   if (pathname === "/search") handleSearch();
@@ -60,10 +70,11 @@ export default function SearchBar({
         placeholder="Search something here"
         name="search"
         onChange={(e) => {
-          setSearch(e.target.value);
-          if (search !== "" && pathname === "/search") handleSearch();
+          const val = e.target.value;
+          setSearch(val);
+          if (val !== "" && pathname === "/search") handleSearch();
         }}
-        defaultValue={search}
+        defaultValue={searchParams.get("query") || ""}
         onKeyDown={(e) => {
           if (e.key === "Enter" && pathname !== "/search" && search !== "")
             handleSearch();

@@ -21,7 +21,10 @@ function TimePicker({
     <Input
       type="time"
       value={selectedTime || ""}
-      onChange={(e) => onSelect(e.target.value)}
+      onChange={(e) => {
+        onSelect(e.target.value);
+        setOpen(false);
+      }}
       onKeyDown={handleKeyDown}
       className="border rounded-md p-2 w-full"
     />
