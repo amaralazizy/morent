@@ -46,7 +46,7 @@ export async function Navbar({ className }: Readonly<{ className?: string }>) {
         className
       )}
     >
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full gap-4">
         <div className="flex items-center gap-16">
           <Link href="/">
             <Logo />
