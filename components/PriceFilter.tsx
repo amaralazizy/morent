@@ -11,15 +11,15 @@ export default function PriceFilter() {
   useEffect(() => {
     const handler = setTimeout(() => setPrice(sliderValue), 500);
     return () => clearTimeout(handler);
-  }, [sliderValue, setPrice]);
+  }, [sliderValue]);
 
-  useEffect(() => {
-    setSliderValue(price || 100);
-  }, [price]);
+  // useEffect(() => {
+  //   setSliderValue(price || 100);
+  // }, [price]);
 
   return (
     <div>
-      <h2 className="text-lg font-semibold mt-4 mb-2">Price</h2>
+      <h2 className="text-lg font-semibold mt-4">Price</h2>
       <Input
         type="range"
         min={0}

@@ -13,7 +13,7 @@ export default function SearchResults() {
   const [results, setResults] = useState<Car[]>([]);
   // const [initialLoading, setInitialLoading] = useState(true);
   const [loadingCards, setLoadingCards] = useState(false);
-  const [resultCount, setResultCount] = useState(0);
+  const [resultCount, setResultCount] = useState(100);
   const [error, setError] = useState(false);
 
   const mockFetchResults = () => {
@@ -50,10 +50,10 @@ export default function SearchResults() {
 
   useEffect(() => {
     // setInitialLoading(true);
-    setLoadingCards(false);
-    setError(false);
-    setResults([]);
-    setResultCount(0);
+    // setLoadingCards(false);
+    // setError(false);
+    // setResults([]);
+    // setResultCount(0);
 
     const timeoutId = setTimeout(() => {
       mockFetchResults();

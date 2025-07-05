@@ -14,7 +14,7 @@ export default function CarDescription({
   return (
     <div
       className={cn(
-        "p-6 flex flex-col justify-between bg-white rounded-lg",
+        "p-6 flex flex-col justify-between bg-white rounded-lg gap-8",
         className
       )}
     >
@@ -65,7 +65,7 @@ export default function CarDescription({
         </div>
       </div>
       {/* TODO: Seperate this into individual component and use it  here and CarCard */}
-      <div className="flex gap-6 justify-between">
+      <div className="flex gap-6 justify-between items-center">
         <div>
           <p>
             <span className="text-3xl font-bold text-secondary-500">
@@ -81,7 +81,7 @@ export default function CarDescription({
         </div>
         <Link
           href={`/car/${car.id}/rent`}
-          className="py-2.5 px-5 rounded-[4px] bg-primary-500 text-white cursor-pointer hover:bg-primary-500 origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-md text-center"
+          className="py-2.5 px-5 rounded-[4px] bg-primary-500 text-white cursor-pointer hover:bg-primary-500 origin-bottom hover:scale-105 transition-all duration-300 hover:shadow-md text-center "
         >
           Rent Now
         </Link>

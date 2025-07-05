@@ -27,13 +27,14 @@ export default function SloganCard({
   const variantStyles = {
     hero: {
       header:
-        "text-[calc(0.25rem+1.8vw)] font-semibold tracking-tight mb-4 max-[820px]:text-3xl max-sm:text-xl",
-      paragraph: "text-base mb-6",
+        "text-[calc(0.25rem+1.8vw)] font-semibold tracking-tight mb-4 max-[820px]:text-3xl max-sm:text-xl ",
+      paragraph: "text-base mb-6 ",
       container: "h-[224px] max-w-70",
     },
     details: {
-      header: "text-[2rem] font-semibold tracking-tight mb-4",
-      paragraph: "font-medium",
+      header:
+        "text-[2rem] font-semibold tracking-tight mb-4 max-[560px]:text-3xl max-[500px]:text-4xl max-[400px]:text-2xl",
+      paragraph: "font-medium max-[560px]:text-xl max-[500px]:text-2xl max-[400px]:text-lg ",
       container: "max-w-[372px]",
     },
   };
@@ -63,7 +64,7 @@ export default function SloganCard({
       </div>
       <div
         className={cn(
-          "absolute bottom-2.5 right-[6vw] w-[calc(2rem+20vw)] h-[8vw] max-[820px]:w-[400px] max-[820px]:h-[100px] max-[820px]:bottom-2 max-sm:w-[200px] max-sm:h-[100px] max-sm:left-1/4 max-sm:scale-120 max-sm:bottom-10 max-sm:relative max-[500px]:hidden",
+          "absolute bottom-2.5 right-[6vw] w-[calc(2rem+20vw)] h-[8vw] max-[820px]:w-[400px] max-[820px]:h-[100px] max-[820px]:bottom-2 max-sm:w-[200px] max-sm:h-[100px] max-sm:left-1/4 max-sm:scale-120 max-sm:-bottom-10 max-sm:relative max-[500px]:hidden",
           ImageClassName
         )}
       >

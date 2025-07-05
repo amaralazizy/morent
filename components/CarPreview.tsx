@@ -43,8 +43,8 @@ export default function CarPreview({
           paragraph="Safety and comfort while driving a futuristic and elegant sports car"
           carImage="/car2.png"
           showButton={false}
-          className="bg-[url('/arrows.png')] bg-primary-500 bg-no-repeat bg-center bg-cover"
-          ImageClassName="scale-90 mx-auto"
+          className="bg-[url('/arrows.png')] bg-primary-500 bg-no-repeat bg-center bg-cover max-[820px]:p-10"
+          ImageClassName="scale-90"  
           variant="details"
         />
       );
@@ -80,17 +80,17 @@ export default function CarPreview({
     <div className={cn("", className)}>
       <div
         key={selectedImage || "default"}
-        className={`w-full h-90 mb-6 rounded-lg overflow-hidden ${animationClass}`}
+        className={`w-full h-90 mb-6  rounded-lg overflow-hidden ${animationClass}`}
       >
         {renderMainImage()}
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center gap-3">
         {Object.entries(carDetails).map(([key, img]) => {
           console.log(key);
           const isSelected = selectedImage === img.src;
           const borderSquare = isSelected ? "" : "before:opacity-0";
           const common =
-            "w-37 h-31 cursor-pointer transition-all duration-300 focus:outline-none rounded-lg relative isolate before:content-[''] before:absolute before:inset-[2px] before:border-6 before:border-white before:rounded-lg before:z-2 before:transition-all before:duration-300";
+            "h-31 cursor-pointer transition-all duration-300 focus:outline-none rounded-lg relative isolate before:content-[''] before:absolute before:inset-[2px] before:border-6 before:border-white before:rounded-lg before:z-2 before:transition-all before:duration-300 flex-1";
           return (
             <button
               key={img.src}
