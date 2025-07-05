@@ -87,10 +87,13 @@ export async function MobileNavBar({
       <div className="flex items-center justify-between">
         <MenuButton />
         {session ? (
-          <Avatar>
-            <AvatarImage src={session.user?.image || ""} />
-            <AvatarFallback>{session.user?.name?.charAt(0)}</AvatarFallback>
-          </Avatar>
+          <div className="flex items-center gap-2">
+            <Avatar>
+              <AvatarImage src={session.user?.image || ""} />
+              <AvatarFallback>{session.user?.name?.charAt(0)}</AvatarFallback>
+            </Avatar>
+            <SignOutButton />
+          </div>
         ) : (
           <SignInButton />
         )}
