@@ -332,3 +332,7 @@
 .input_primary {
     @apply focus:outline-primary-500 focus-visible:ring-primary-500/50 bg-default-background rounded-md py-4 pl-8 pr-4 placeholder:text-secondary-300 placeholder:text-sm placeholder:font-medium outline-none border-none selection:bg-primary-500 selection:text-secondary-100 h-fit;
   }
+
+.step_counter {
+  @apply text-sm text-secondary-300 whitespace-nowrap;
+}

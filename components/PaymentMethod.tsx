@@ -19,14 +19,14 @@ const inputFields = [
 
 export default function PaymentMethod() {
   return (
-    <section className="bg-white rounded-lg p-6">
+    <section className="bg-white rounded-lg p-6 @container">
       <div className="mb-8">
         <h2 className="text-xl font-bold">Payment Method</h2>
         <div className="flex justify-between">
           <p className="text-sm text-secondary-300">
             Please enter your payment method
           </p>
-          <p className="text-sm text-secondary-300">Step 3 of 4</p>
+          <p className="step_counter">Step 3 of 4</p>
         </div>
       </div>
       <div className="flex flex-col gap-8 bg-default-background rounded-lg p-6 mb-6">
@@ -42,7 +42,7 @@ export default function PaymentMethod() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-8 @max-md:grid-cols-1">
           {inputFields.map(({ label, id, placeholder }) => (
             <div className="flex flex-col gap-4" key={id}>
               <Label htmlFor={id} className="font-semibold text-base">

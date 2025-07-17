@@ -9,7 +9,7 @@ export default function RentForm({
   className?: string;
 }>) {
   return (
-    <form className={cn("", className)}>
+    <form className={cn("@container", className)}>
       <BillingInfo />
       <RentalInfo />
       <PaymentMethod />

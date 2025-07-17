@@ -25,7 +25,7 @@ const variantStyles: Record<string, Record<string, string>> = {
     popoverButton: "",
   },
   RentalForm: {
-    inputFields: "grid grid-cols-2 divide-x-0 gap-8",
+    inputFields: "grid grid-cols-2 divide-x-0 gap-8 @max-md:grid-cols-1",
     inputLabel: "flex flex-col gap-4 p-0",
     label: "text-secondary-500 font-semibold",
     popoverButton:

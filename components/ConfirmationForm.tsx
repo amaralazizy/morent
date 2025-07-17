@@ -22,7 +22,7 @@ export default function ConfirmationForm() {
           <p className="text-sm text-secondary-300">
             We are getting to the end. Just few clicks and your rental is ready!
           </p>
-          <p className="text-sm text-secondary-300">Step 4 of 4</p>
+          <p className="step_counter">Step 4 of 4</p>
         </div>
       </div>
       {checkboxes.map(({ id, label }) => (
@@ -30,9 +30,11 @@ export default function ConfirmationForm() {
           key={id}
           className="px-8 py-4 rounded-lg bg-default-background mb-6"
         >
-          <div className="flex gap-5 items-center">
-            <Input type="checkbox" id={id} className="w-6 h-6" />
-            <Label className="font-semibold text-base" htmlFor={id}>
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <Input type="checkbox" id={id} className="w-6 h-6" required/>
+            </div>
+            <Label className="font-semibold text-base ml-5" htmlFor={id}>
               {label}
             </Label>
           </div>

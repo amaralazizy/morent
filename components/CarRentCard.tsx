@@ -18,7 +18,7 @@ export default function CarRentCard({
   return (
     <div
       className={cn(
-        "col-span-1 p-6 bg-white rounded-lg self-start flex flex-col gap-8",
+        "p-6 bg-white rounded-lg self-start flex flex-col gap-8 @container",
         className
       )}
     >
@@ -29,17 +29,19 @@ export default function CarRentCard({
           of your rental car.
         </p>
       </div>
-      <div className="flex gap-4">
-        <div className={`w-37 h-31 rounded-lg relative isolate ${bg}`}>
+      <div className="flex gap-4 @max-xs:flex-col">
+        <div
+          className={`w-37 h-31 rounded-lg relative isolate ${bg} @max-xs:w-full`}
+        >
           <Image src="/car2.png" alt="car" fill className={imgClass} />
         </div>
-        <div className="flex flex-col justify-center gap-2">
+        <div className="flex flex-col containerjustify-center gap-2">
           <h2 className="text-[2rem] font-bold">{car?.name}</h2>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1">
               <RatingStarIcons active={car?.rating || 0} />
             </div>
-            <p className="text-sm text-secondary-400">
+            <p className="text-sm text-secondary-400 truncate">
               {car?.reviews && car.reviews.length > 999
                 ? "999+"
                 : car?.reviews
@@ -61,13 +63,13 @@ export default function CarRentCard({
           <span>$0</span>
         </div>
       </div>
-      <div className="[>has:input:focus-visible]:border [>has:input:focus-visible]:border-primary-500 grid grid-flow-col h-14 overflow-hidden">
+      <div className="[>has:input:focus-visible]:border [>has:input:focus-visible]:border-primary-500 flex overflow-hidden @max-xs:flex-col @xs:h-14">
         <Input
           type="text"
           placeholder="Apply promo code"
-          className="input_primary !rounded-r-none  !h-full"
+          className="input_primary !@xs:rounded-r-none !h-full !@max-xs:rounded-b-none"
         />
-        <Button className="bg-default-background text-secondary-500 hover:bg-default-background hover:text-secondary-500 shadow-none border-none font-semibold text-base h-full rounded-l-none">
+        <Button className="bg-primary-500 text-white hover:bg-primary-600 shadow-none border-none font-semibold text-base h-full @xs:rounded-l-none @max-xs:rounded-t-none">
           Apply now
         </Button>
       </div>
