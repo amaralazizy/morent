@@ -1,4 +1,4 @@
-import PickupDropoffSelector from "@/components/PickupDropoffSelector";
+// import PickupDropoffSelector from "@/components/PickupDropoffSelector";
 import PopularCars from "@/components/PopularCars";
 import SloganCard from "@/components/SloganCard";
 
@@ -20,12 +20,12 @@ export default function Home() {
               paragraph="Providing cheap car rental services and safe and comfortable facilities."
               buttonColor="bg-information-500"
               carImage="/car2.png"
-              ImageClassName="w-[20vw] w-[20vw]"
+              ImageClassName="w-[20vw]"
               className="bg-[url('/arrows.png')] bg-primary-500 bg-no-repeat bg-center bg-cover w-[calc((100%-32px)/2)] max-[820px]:w-full max-[820px]:p-4 max-sm:h-fit max-[820px]:hidden max-sm:hidden"
             />
           </section>
         </div>
-        <PickupDropoffSelector />
+        {/* <PickupDropoffSelector /> */}
         <PopularCars />
     </div>
   );
