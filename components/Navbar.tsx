@@ -8,32 +8,16 @@ import SignInButton from "@/components/SignInButton";
 import { auth } from "@/auth";
 import SignOutButton from "@/components/SignOutButton";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import MenuButton from "@/components/MenuButton";
+import FavouritesPopover from "@/components/FavouritesPopover";
+import SettingsPopover from "@/components/SettingsPopover";
+import NotificationsPopover from "@/components/NotificationsPopover";
 
-const buttons = [
-  {
-    name: "Favourites",
-    icon: (
-      <Heart
-        className="w-5 h-[18px] text-secondary-400 scale-120"
-        fill="#596780"
-      />
-    ),
-  },
-  {
-    name: "Notifications",
-    icon: (
-      <Bell
-        className="w-5 h-[18px] text-secondary-400 scale-120"
-        fill="#596780"
-      />
-    ),
-  },
-  {
-    name: "Settings",
-    icon: <Settings className="w-5 h-[18px] text-secondary-400 scale-120" />,
-  },
+const popovers = [
+  <FavouritesPopover key="favourites" />,
+  <NotificationsPopover key="notifications" />,
+  <SettingsPopover key="settings" />,
 ];
 
 export async function Navbar({ className }: Readonly<{ className?: string }>) {
@@ -54,14 +38,7 @@ export async function Navbar({ className }: Readonly<{ className?: string }>) {
           <SearchBar className="min-w-0 max-lg:hidden" />
         </div>
         <div className="flex items-center gap-5">
-          {buttons.map((button) => (
-            <Button
-              key={button.name}
-              className="border-1 border-secondary-200/40 rounded-full cursor-pointer max-lg:hidden bg-transparent hover:bg-transparent py-5"
-            >
-              {button.icon}
-            </Button>
-          ))}
+          {popovers.map((popover) => popover)}
           {session ? (
             <Avatar>
               <AvatarImage src={session.user?.image || ""} />
