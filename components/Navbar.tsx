@@ -21,6 +21,7 @@ const popovers = [
 
 export async function Navbar({ className }: Readonly<{ className?: string }>) {
   const session = await auth();
+  
 
   return (
     <nav

@@ -1,21 +1,20 @@
-// "use client";
+// types/car.ts (Create a separate types file)
 
-// import Image from "next/image";
+
+// components/CarCard.tsx
 import Like from "@/components/Like";
 import { Fuel, LifeBuoy, Users } from "lucide-react";
-// import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Car } from "@/types/database";
-// import RentalButton from "@/components/ClientButton";
 import CarImageLink from "@/components/CarImageLink";
 import Link from "next/link";
+import { CarType } from "@/types/database"; // Import the type
+
 export interface CarCardProps {
-  car: Car;
+  car: CarType;
   className?: string;
 }
 
 export default function CarCard({ car, className }: CarCardProps) {
-  // const router = useRouter();
   return (
     <div
       className={cn(
@@ -25,8 +24,10 @@ export default function CarCard({ car, className }: CarCardProps) {
     >
       <div className="flex justify-between mb-16 @max-md:mb-8">
         <div className="grid gap-1">
-          <h4 className="text-xl font-medium">{car.name}</h4>
-          <p className="text-sm text-gray-500">{car.type}</p>
+          <h4 className="text-xl font-medium">
+            {car?.brand + " " + car?.model}
+          </h4>
+          <p className="text-sm text-gray-500">{car?.type}</p>
         </div>
         <Like />
       </div>
@@ -35,7 +36,7 @@ export default function CarCard({ car, className }: CarCardProps) {
         <div className="flex text-sm text-secondary-300 justify-around mb-8 @max-xs:flex-wrap @max-xs:gap-2 @md:flex-col">
           <div className="flex items-center gap-1.5">
             <Fuel />
-            <div className="text-sm font-medium">{car.fuelTank}L</div>
+            <div className="text-sm font-medium">{car.tank}L</div>
           </div>
           <div className="flex items-center gap-1.5">
             <LifeBuoy />
@@ -51,13 +52,13 @@ export default function CarCard({ car, className }: CarCardProps) {
         <div>
           <p>
             <span className="text-xl font-bold text-secondary-500">
-              ${(car.price - car.discount).toFixed(2)}/
+              ${car?.price_after_discount.toFixed(2)}/
             </span>
             <span className="text-sm text-secondary-300"> day</span>
           </p>
-          {!!car.discount && (
+          {car?.discount_percentage !== 0 && (
             <span className="text-sm text-secondary-300 line-through">
-              {car.price.toFixed(2)}
+              ${car?.rent_price.toFixed(2)}
             </span>
           )}
         </div>

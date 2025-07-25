@@ -1,6 +1,6 @@
-export default function Loading() {
+export default function Loading({...props}) {
   return (
-    <div className="fixed inset-0 bg-default-background flex items-center justify-center z-50">
+    <div {...props} className="fixed inset-0 bg-default-background flex items-center justify-center z-50">
       <div className="flex flex-col items-center space-y-4">
         {/* Car Animation */}
         <div className="relative w-80 h-32 overflow-hidden">

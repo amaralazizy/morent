@@ -1,7 +1,7 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { cars } from "@/data/database";
-import { useState } from "react";
+// "use client";
+// import { Button } from "@/components/ui/button";npm i scrolltrigger
+// import { cars } from "@/data/database";
+// import { useState } from "react";
 import AllCars from "@/components/AllCars";
 import { cn } from "@/lib/utils";
 
@@ -16,15 +16,15 @@ export default function PopularCars({
   title = "Popular",
   // showAll = false,
 }: Readonly<PopularCarsProps>) {
-  const [carsToBeShown, setCarsToBeShown] = useState(9);
-  function handleShowMore() {
-    setCarsToBeShown((prevCarsToBeShown) => {
-      if (prevCarsToBeShown + 9 > cars.length) {
-        return cars.length;
-      }
-      return prevCarsToBeShown + 9;
-    });
-  }
+  // const [carsToBeShown, setCarsToBeShown] = useState(9);
+  // function handleShowMore() {
+  //   setCarsToBeShown((prevCarsToBeShown) => {
+  //     if (prevCarsToBeShown + 9 > cars.length) {
+  //       return cars.length;
+  //     }
+  //     return prevCarsToBeShown + 9;
+  //   });
+  // }
 
   return (
     <div className={cn("", className)}>
@@ -34,22 +34,22 @@ export default function PopularCars({
           View All
         </a>
       </div>
-      <AllCars carsToBeShown={carsToBeShown} />
+      <AllCars/>
       <div className="flex items-center justify-center mb-16 relative max-[400px]:justify-between">
-        {cars.length > carsToBeShown && (
+        {/* {cars.length > carsToBeShown && (
           <Button
             className="text-white px-5 py-2.5 rounded bg-primary-500 hover:bg-primary-500 cursor-pointer "
             onClick={() => handleShowMore()}
           >
             Show more cars
           </Button>
-        )}
-        {cars.length - carsToBeShown !== 0 && (
+        )} */}
+        {/* {cars.length - carsToBeShown !== 0 && (
           <span className="font-medium text-sm text-secondary-300 absolute right-0 max-[400px]:static">
             {cars.length - carsToBeShown} Car
             {cars.length - carsToBeShown > 1 ? "s" : ""}
           </span>
-        )}
+        )} */}
       </div>
     </div>
   );

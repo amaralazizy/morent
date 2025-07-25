@@ -1,0 +1,1001 @@
+brand,model,tank,capacity,transmission,rent_price,discount_percentage
+Lotus,Evora,66.62,6,3XL,2.99,19
+Honda,CR-X,55.52,6,3XL,15.99,13
+Ferrari,599 GTB Fiorano,57.96,3,M,3.49,16
+Mitsubishi,Mirage,53.11,7,XS,79.99,17
+Ford,Crown Victoria,52.39,3,3XL,2.99,12
+GMC,Savana 3500,53.01,5,2XL,2.39,14
+Honda,Civic,62.71,3,S,39.99,20
+Mazda,RX-8,65.14,5,XS,15.99,10
+Nissan,Maxima,64.49,3,S,10.99,15
+Mercedes-Benz,SL-Class,62.07,5,XS,29.99,16
+Audi,200,56.48,7,2XL,39.99,19
+Ford,LTD,57.93,5,L,4.49,11
+Nissan,Quest,72.38,5,S,29.99,20
+Volkswagen,Jetta,53.98,7,S,0.79,16
+Subaru,XT,67.69,6,XL,12.99,15
+BMW,6 Series,79.05,4,2XL,19.99,17
+Chevrolet,Express 1500,51.14,7,M,29.99,17
+Lotus,Exige,67.85,6,2XL,39.99,13
+Aston Martin,DB9,65.25,7,M,25.99,20
+Lincoln,MKS,56.04,5,XS,30,11
+BMW,5 Series,54.86,5,M,1.99,16
+Dodge,Viper,61.4,7,XS,29.99,10
+Ford,E250,71.35,3,3XL,29.99,17
+BMW,7 Series,55.66,3,XS,2.99,12
+Chevrolet,Silverado,75.75,4,2XL,3.99,10
+Lexus,GX,54.79,6,L,5.99,18
+Ford,F350,58.76,5,XS,3.99,13
+Toyota,Camry Hybrid,64.02,5,M,29.99,16
+Dodge,Dakota Club,54.91,7,XL,199.99,17
+Mercury,Grand Marquis,65.73,4,L,2.99,14
+Honda,Civic,70.08,7,2XL,4.29,14
+Oldsmobile,Bravada,79.95,5,2XL,49.99,19
+Chevrolet,Astro,69.0,5,2XL,3.49,18
+Mitsubishi,Diamante,67.27,7,S,29.99,14
+Chevrolet,Silverado 3500,78.58,6,M,59.99,10
+Lincoln,MKT,76.43,7,M,0.79,13
+Ford,Bronco,63.22,7,XS,49.99,16
+Volvo,S70,67.78,4,2XL,39.99,13
+Chevrolet,Suburban,71.25,4,2XL,5.99,20
+Hyundai,Santa Fe,55.16,3,L,22.99,10
+Hyundai,Elantra,79.39,6,L,6.99,11
+Volvo,XC70,58.77,6,3XL,1.99,16
+Dodge,Stratus,69.93,6,XS,99.99,12
+Land Rover,Range Rover,64.84,7,XS,2.99,10
+GMC,Savana 2500,74.45,6,S,99.99,19
+Subaru,Legacy,66.46,4,3XL,22,16
+Chevrolet,Venture,54.11,5,XS,6.99,19
+Volvo,C70,71.15,4,S,3.99,20
+Ford,Bronco,73.33,7,3XL,19.99,14
+Volkswagen,Tiguan,60.79,5,XL,2.99,17
+Volkswagen,Jetta,52.93,7,L,5.99,18
+Chevrolet,Corvette,65.68,4,L,6.29,17
+Volvo,S80,54.04,6,XS,2.49,14
+GMC,Envoy,53.76,5,S,39.99,16
+Mazda,Protege5,78.55,5,S,29.99,10
+Ford,Taurus,79.15,6,L,24.99,12
+Volvo,V40,73.64,3,XS,2.49,14
+Volkswagen,Golf,63.98,5,M,24.99,12
+Ford,Ranger,79.64,5,S,35.99,10
+Nissan,Xterra,51.55,6,L,4.79,12
+Mercedes-Benz,C-Class,56.03,7,3XL,14.99,10
+BMW,3 Series,68.36,7,3XL,14.99,16
+Pontiac,Trans Sport,50.95,3,L,3.29,20
+Subaru,Alcyone SVX,73.88,7,S,4.49,19
+Infiniti,J,69.55,6,S,5.99,15
+Honda,Odyssey,61.53,7,S,2.99,12
+Chevrolet,Astro,56.82,7,M,129.99,14
+Dodge,Ram Van 1500,52.29,4,XS,3.29,20
+Audi,A3,55.19,3,S,2.49,11
+Acura,TL,58.88,5,XL,1.89,20
+Subaru,Leone,62.16,3,L,6.49,12
+Toyota,Tacoma Xtra,78.97,4,M,3.29,13
+Mercedes-Benz,SLR McLaren,59.06,5,2XL,15.99,13
+BMW,X6,69.37,4,L,39.99,19
+Cadillac,SRX,64.51,3,XL,7.99,18
+Chrysler,Concorde,52.66,4,2XL,89.99,12
+Buick,Riviera,74.4,3,L,29.99,18
+Suzuki,Daewoo Magnus,76.63,5,L,4.79,13
+Mazda,929,59.46,7,M,2.99,20
+Subaru,Impreza,62.54,5,S,3.49,17
+Mitsubishi,Pajero,76.66,3,S,69.99,19
+Land Rover,Range Rover,65.57,5,L,3.29,13
+GMC,Rally Wagon 3500,67.07,4,XS,3.49,14
+Suzuki,XL-7,58.58,4,M,2.99,16
+Hyundai,Sonata,55.96,6,M,24.99,12
+Dodge,Shadow,62.54,5,3XL,359.99,16
+Honda,Civic,59.38,7,XL,19.99,14
+Chevrolet,Corvette,75.25,4,3XL,3.29,16
+Audi,S5,71.42,4,2XL,3.79,13
+Plymouth,Voyager,69.42,5,2XL,89.99,10
+Lincoln,LS,64.16,5,2XL,34.99,17
+Porsche,911,73.56,7,XS,6.99,18
+Lincoln,Navigator,74.06,4,3XL,3.99,10
+Kia,Spectra,60.84,6,L,19.99,16
+Mercedes-Benz,CLK-Class,52.31,5,L,12.99,10
+Mercury,Mystique,78.99,7,XS,4.49,13
+Honda,Civic,76.54,5,2XL,34.99,19
+Ford,Transit Connect,71.16,6,3XL,49.99,14
+Toyota,4Runner,53.33,4,L,2.49,15
+GMC,Savana 3500,76.35,7,L,3.99,14
+Hummer,H1,70.78,6,M,29.99,14
+Chevrolet,Suburban 2500,69.43,7,3XL,9.99,14
+BMW,X3,71.05,5,M,14.99,12
+Mazda,Mazda6,50.54,5,3XL,2.99,12
+Mazda,929,57.65,6,3XL,1.29,13
+Lincoln,Town Car,66.29,6,XL,45.99,18
+Dodge,Omni,69.55,5,S,39.99,10
+GMC,Savana 3500,72.32,6,XL,1.5,15
+Buick,Enclave,58.31,7,XS,2.99,18
+Bentley,Azure,52.57,3,3XL,59.99,20
+Land Rover,Freelander,66.68,5,L,19.99,17
+Suzuki,Verona,68.16,5,XS,39.99,16
+Chevrolet,Colorado,66.33,5,M,3.49,13
+Pontiac,6000,51.28,3,XS,2.99,19
+Oldsmobile,Intrigue,55.72,4,3XL,29.99,20
+Mercedes-Benz,S-Class,75.43,3,M,54.99,18
+Toyota,Avalon,65.26,3,2XL,59.99,20
+Ford,Mustang,69.36,6,3XL,29.99,16
+Mitsubishi,Endeavor,66.83,5,2XL,3.99,16
+Chevrolet,Caprice,52.87,5,3XL,29.99,17
+Ferrari,458 Italia,77.67,6,XL,129.99,15
+Suzuki,XL7,62.62,6,3XL,3.99,14
+Volkswagen,Jetta III,75.27,5,M,16.99,15
+Toyota,Camry,65.65,3,3XL,32.99,10
+Volkswagen,Jetta,73.24,5,S,6.99,10
+Chevrolet,Silverado 3500,63.01,3,XS,2.49,18
+Ford,Bronco,79.53,4,2XL,12.99,15
+Saturn,VUE,70.91,4,L,24.99,16
+Pontiac,Sunbird,69.03,7,2XL,19.99,11
+Dodge,Charger,55.49,4,L,12.99,13
+Audi,A6,62.7,5,XS,119.99,16
+Nissan,Xterra,76.09,7,XS,199.99,12
+GMC,Sierra 1500,52.05,4,2XL,24.99,18
+Volkswagen,Passat,66.65,7,S,29.99,19
+Hummer,H1,50.51,7,3XL,5.99,16
+GMC,Yukon XL 2500,61.08,5,2XL,3.99,15
+Acura,TSX,79.83,5,XL,6.99,14
+Dodge,D150 Club,58.96,3,XS,14.99,20
+Volkswagen,R32,52.27,3,L,14.99,14
+Dodge,Ram Van 2500,60.97,4,2XL,2.49,13
+BMW,M,52.41,3,S,2.99,16
+Buick,Rendezvous,56.06,6,2XL,59.99,20
+Toyota,Venza,68.66,3,M,79.99,11
+Land Rover,Range Rover,69.8,5,S,4.99,18
+BMW,Z3,60.33,6,2XL,4.99,15
+GMC,Yukon XL 2500,71.91,7,2XL,2.49,12
+Porsche,Boxster,59.31,4,XS,5.99,13
+Volkswagen,Jetta,55.52,6,M,2.49,10
+Acura,MDX,68.62,3,XS,19.99,17
+Subaru,Legacy,68.59,3,L,58.99,16
+Toyota,Highlander,57.87,4,XL,3.29,14
+Oldsmobile,Silhouette,60.01,5,XL,44.99,13
+BMW,6 Series,73.13,5,XS,39.99,19
+Dodge,Ram,56.28,5,L,8.49,14
+Dodge,Ram Wagon B150,69.68,6,XL,11.99,19
+Chevrolet,Express 2500,58.03,6,3XL,1.89,17
+Mazda,B-Series,76.13,7,L,4.49,17
+Lincoln,MKT,70.16,3,XS,29.99,15
+Infiniti,I,72.98,5,M,19.99,14
+Mercedes-Benz,300SD,61.19,5,2XL,2.29,15
+Maserati,430,77.55,4,S,4.99,17
+Nissan,200SX,60.18,3,3XL,1.89,10
+Ford,F250,59.57,3,XL,2.49,10
+Mitsubishi,Chariot,69.8,3,XL,19.99,11
+Ford,Flex,74.27,5,2XL,3.29,10
+Lexus,GX,58.18,4,S,39.99,20
+Audi,S8,66.65,5,L,3.79,15
+Lincoln,Mark VIII,67.39,3,M,34.99,15
+Bentley,Azure,71.15,4,XL,34.99,20
+Volkswagen,New Beetle,64.81,6,XL,5.99,18
+Lincoln,Town Car,65.46,7,2XL,59.99,16
+Hummer,H2,64.24,4,S,34.99,15
+Lexus,LS,59.72,4,L,1.99,10
+Hummer,H2,78.06,4,XS,9.99,20
+Chrysler,New Yorker,63.81,7,L,4.99,12
+Hyundai,Tiburon,62.91,3,L,14.99,19
+Volkswagen,Routan,59.96,3,XL,4.29,16
+Toyota,T100 Xtra,60.57,3,M,34.99,13
+Chevrolet,Cobalt SS,52.83,6,L,8.49,12
+Pontiac,Sunfire,67.81,7,M,3.49,14
+Buick,Century,64.54,4,L,24.99,14
+Chevrolet,Camaro,65.67,4,XL,14.99,11
+Pontiac,Firefly,78.74,3,3XL,19.99,10
+Land Rover,Discovery,69.91,5,3XL,12.99,16
+Pontiac,Grand Prix,62.77,4,M,3.99,10
+Chrysler,Town & Country,57.27,3,XL,49.99,20
+Dodge,Ram Van 3500,62.18,6,XS,2.49,12
+Pontiac,Solstice,62.66,3,XL,29.99,11
+Volkswagen,GTI,63.43,4,XL,24.99,19
+Mercedes-Benz,C-Class,50.85,7,3XL,69.99,13
+Kia,Optima,63.01,6,XL,12.99,20
+Ford,E-350 Super Duty Van,62.19,5,XL,34.99,16
+Hyundai,Elantra,72.15,4,L,19.99,16
+Ford,Thunderbird,58.85,4,XL,2.49,12
+Lexus,RX,67.07,6,S,15.99,17
+Dodge,Ram 1500,67.71,4,XL,69.99,10
+Toyota,Corolla,53.78,6,S,5.29,14
+Land Rover,LR2,61.4,5,3XL,8.99,12
+Ford,LTD,66.31,3,M,15.99,10
+BMW,7 Series,54.77,3,2XL,24.99,12
+Jeep,Wrangler,69.32,3,M,4.29,19
+Toyota,Echo,67.29,5,L,9.99,11
+Honda,CR-V,74.14,6,S,12.99,18
+Volkswagen,GTI,64.01,4,S,2.49,10
+Mazda,Mazda6,68.17,7,2XL,3.49,11
+GMC,Sierra 1500,53.07,7,3XL,14.99,20
+Cadillac,Eldorado,66.99,6,2XL,18.99,19
+Chrysler,Voyager,72.61,7,XS,49.99,17
+Audi,V8,69.46,6,3XL,29.99,14
+Honda,Pilot,79.39,5,3XL,69.99,13
+Geo,Prizm,62.43,3,S,29.99,17
+Chevrolet,Blazer,51.95,6,XL,25,19
+Ford,F-Series Super Duty,53.46,3,L,34.99,11
+Dodge,Durango,66.76,7,2XL,19.99,12
+Hyundai,Sonata,53.22,6,XS,4.29,14
+BMW,8 Series,61.18,3,XL,24.99,12
+Acura,TL,68.38,6,XL,1.69,19
+Honda,Odyssey,77.17,6,L,23.99,13
+Plymouth,Grand Voyager,66.52,4,M,59.99,17
+Hyundai,Elantra,68.37,3,3XL,1.99,12
+Land Rover,Discovery,67.98,6,2XL,19.99,12
+Audi,riolet,63.51,7,XL,5.99,10
+Maserati,Quattroporte,50.96,6,2XL,79.99,11
+Dodge,Intrepid,61.08,5,XS,45,14
+Nissan,200SX,70.83,3,XL,8.99,14
+Mazda,Familia,60.15,3,3XL,3.29,19
+Ford,Taurus,62.69,6,S,2.49,12
+Lincoln,LS,55.06,6,L,3.99,19
+BMW,Z4 M,69.55,4,3XL,2.49,18
+Lincoln,Town Car,67.8,7,M,19.99,20
+Pontiac,LeMans,62.78,6,XS,3.49,12
+Dodge,Avenger,75.73,7,XL,3.99,18
+Ford,Ranger,70.01,6,M,22.99,11
+Audi,A4,55.95,5,M,139.99,19
+Subaru,Brat,59.1,6,XS,3.99,11
+Nissan,Murano,70.37,6,XS,3.99,13
+Nissan,300ZX,69.48,6,XL,4.79,16
+Dodge,D150 Club,72.52,4,3XL,35.99,12
+Toyota,4Runner,61.51,3,2XL,3.99,20
+Cadillac,XLR,57.73,6,L,39.99,11
+Subaru,Leone,75.08,5,L,1.49,16
+Nissan,Xterra,64.88,7,M,3.29,18
+Toyota,TundraMax,79.12,4,3XL,24.99,19
+Pontiac,Bonneville,53.65,5,S,6.99,13
+Lexus,GS,67.24,6,2XL,19.99,11
+Ford,Excursion,68.84,7,XS,2.89,17
+Volvo,V70,74.01,7,3XL,1.99,19
+Saturn,Relay,60.97,5,2XL,4.99,15
+Mazda,B-Series,79.31,6,M,6.49,14
+Ford,Focus,58.47,7,L,5.99,19
+Mercedes-Benz,W201,52.65,7,3XL,29.99,17
+Chevrolet,Corvette,54.06,5,3XL,6.99,11
+GMC,Yukon,54.67,3,M,49.99,11
+Pontiac,GTO,70.13,3,L,22.99,19
+Acura,NSX,51.24,4,L,6.99,20
+Infiniti,I,70.66,5,S,49.99,16
+Honda,Pilot,58.68,6,XL,7.49,18
+Ford,F250,72.35,5,S,39.99,10
+Chevrolet,Malibu,77.2,3,XS,7.49,15
+Buick,Roadmaster,75.26,7,S,39.99,19
+Honda,S2000,73.39,4,M,12.99,20
+Hummer,H1,59.81,6,S,89.99,16
+Renault,Alliance,78.12,7,XS,3.29,18
+Cadillac,Fleetwood,54.78,3,XL,29.99,11
+Lexus,LS,75.08,4,S,199.99,16
+Mercedes-Benz,SLR McLaren,69.83,3,M,1.89,20
+GMC,Savana 3500,58.75,5,XL,2.69,20
+Honda,Civic,74.11,7,L,3.49,12
+Chrysler,Town & Country,67.68,7,2XL,4.99,18
+Dodge,Ram Van B250,58.81,5,M,27.99,10
+Mitsubishi,Galant,52.62,3,3XL,6.99,14
+Infiniti,EX,70.85,5,2XL,4.79,10
+Ford,Ranger,65.96,3,XL,24.99,10
+Ford,Mustang,52.68,7,2XL,45.99,17
+Saab,9-3,59.69,6,XS,3.99,15
+Mazda,Miata MX-5,63.29,6,3XL,3.99,11
+BMW,X3,63.77,7,XS,4.29,15
+Ford,Econoline E350,50.97,4,S,12.99,20
+GMC,Vandura 2500,64.75,5,L,2.79,16
+Subaru,Legacy,74.18,7,3XL,99.99,10
+Chevrolet,Camaro,57.91,4,M,4.49,13
+Chevrolet,Corvette,52.07,3,3XL,4.99,12
+Ford,Ranger,62.97,5,M,17.99,10
+Buick,Lucerne,55.97,6,3XL,29.99,18
+Plymouth,Acclaim,73.6,3,3XL,24.99,17
+Bentley,Continental GTC,74.81,6,3XL,2.79,16
+Nissan,Pathfinder,65.77,5,3XL,29.99,10
+Lexus,HS,64.17,5,XL,4.99,11
+Dodge,Ram 1500,51.27,3,L,19.99,16
+Chrysler,Cirrus,57.94,7,XS,6.99,17
+Lincoln,MKX,60.24,4,XL,79.99,19
+Chevrolet,Camaro,64.72,6,2XL,4.99,19
+Nissan,Xterra,72.07,3,L,3.59,12
+Ford,Windstar,51.23,6,XS,3.99,14
+Oldsmobile,Bravada,60.7,4,XS,19.99,20
+Toyota,Corolla,58.82,6,2XL,2.59,15
+Toyota,Paseo,63.98,5,3XL,19.99,13
+Hummer,H1,70.17,6,XS,39.99,19
+Ferrari,F430,72.95,6,XS,8.99,18
+BMW,5 Series,60.56,5,XS,79.99,19
+Dodge,Ram 3500,71.36,7,M,39.99,18
+Ford,Thunderbird,53.45,4,3XL,19.99,15
+Volvo,850,60.36,5,3XL,24.99,10
+Dodge,Grand Caravan,79.23,7,3XL,34.99,14
+Dodge,Intrepid,68.73,7,3XL,6.99,13
+Mitsubishi,Precis,74.99,3,2XL,39.99,12
+Ford,Probe,56.68,5,XL,2.99,19
+Volkswagen,New Beetle,71.98,7,XS,49.99,15
+Dodge,Ram 2500 Club,54.69,4,2XL,49.99,11
+Mazda,Mazda3,69.47,7,XS,129.99,10
+Mazda,Millenia,74.44,5,M,44.99,18
+Saab,9-3,51.22,3,M,19.99,16
+Jaguar,XJ Series,54.89,4,XL,49.99,15
+Mercury,Topaz,62.88,5,L,6.49,16
+Toyota,Tundra,75.48,6,3XL,4.49,13
+Subaru,Legacy,58.46,7,2XL,3.99,19
+Cadillac,DeVille,56.84,3,3XL,79.99,16
+Mitsubishi,Endeavor,65.28,6,M,4.19,13
+Toyota,Xtra,75.32,4,2XL,3.99,10
+Toyota,Sequoia,71.83,6,L,1.49,18
+Ford,F250,78.5,3,L,39.99,16
+Jeep,Grand Cherokee,70.22,5,XL,5.99,12
+Honda,Ridgeline,67.34,5,XL,129.99,19
+GMC,Savana 3500,55.64,7,2XL,4.49,19
+Suzuki,Samurai,73.23,4,2XL,5.49,17
+Mazda,RX-7,57.23,6,XL,3.29,18
+Honda,Civic,52.73,7,S,3.29,19
+Ford,Explorer Sport,63.94,7,M,4.29,12
+Ford,Escort,63.83,3,3XL,34.99,17
+Volvo,XC70,78.74,3,XS,24.99,17
+Mercedes-Benz,S-Class,75.34,6,3XL,32.99,16
+Chevrolet,HHR,53.58,5,2XL,22.99,18
+Pontiac,Firebird,69.04,5,M,1.99,11
+Mitsubishi,Eclipse,57.44,3,S,29.99,16
+Kia,Sportage,67.51,6,M,5.49,17
+Hyundai,Santa Fe,66.37,3,XL,3.49,12
+Dodge,Neon,63.76,5,M,9.99,16
+Mercury,Sable,57.99,5,L,54.99,13
+Honda,Civic,70.42,4,3XL,8.99,18
+Pontiac,Aztek,77.54,5,M,34.99,14
+GMC,Yukon XL 1500,75.22,7,S,2.49,10
+GMC,Sierra 1500,64.23,6,2XL,7.99,17
+Suzuki,Daewoo Magnus,76.42,4,L,19.99,11
+Ford,Mustang,74.33,7,2XL,4.29,13
+Porsche,911,64.82,6,M,24.99,18
+GMC,3500 Club Coupe,74.01,4,XS,2.99,17
+Mercedes-Benz,G-Class,75.41,4,3XL,69.99,19
+BMW,325,69.09,5,S,5.49,19
+Mazda,B-Series Plus,67.76,4,2XL,99.99,13
+Cadillac,CTS,52.65,4,S,4.49,11
+Audi,A8,52.52,6,XS,129.99,14
+Lexus,LS,67.1,5,2XL,2.49,18
+Dodge,Durango,54.16,5,S,4.49,20
+Suzuki,Daewoo Lacetti,67.27,7,XL,8.99,20
+Ford,Expedition,69.83,3,M,2.79,16
+Chrysler,Town & Country,57.1,7,3XL,39.99,13
+Isuzu,Oasis,67.86,5,S,39.99,20
+Dodge,Ram 2500 Club,69.68,5,3XL,5.29,16
+Mercedes-Benz,SL-Class,71.51,6,XL,4.99,20
+Infiniti,G35,71.42,6,XL,4.79,10
+Toyota,Venza,52.59,3,S,2.79,10
+Nissan,Armada,57.26,3,L,3.49,17
+Toyota,Prius,64.56,4,M,6.49,19
+Dodge,Grand Caravan,63.32,4,3XL,3.99,18
+Dodge,Dakota,56.96,3,XS,199.99,16
+Nissan,Murano,65.48,4,M,2.99,13
+Pontiac,Firebird Formula,58.18,6,M,2.99,16
+Pontiac,LeMans,64.2,5,L,3.49,15
+Cadillac,XLR-V,69.73,6,3XL,79.99,20
+Toyota,Xtra,60.35,7,3XL,19.99,16
+Ford,Mustang,60.64,7,XL,25.99,18
+Alfa Romeo,164,76.8,3,2XL,6.99,14
+Honda,CR-X,55.13,5,S,29.99,20
+Daewoo,Leganza,68.28,5,M,39.99,14
+Pontiac,Grand Prix,51.64,7,M,19.99,20
+Mazda,CX-9,55.04,6,S,49.99,16
+Ford,F250,69.94,7,S,10.99,10
+Ford,F-350 Super Duty,67.55,3,3XL,249.99,14
+GMC,Sierra 3500,60.19,4,S,3.99,17
+Audi,R8,64.1,3,M,3.19,14
+Saturn,S-Series,74.72,3,3XL,34.99,14
+Ford,Escort,63.69,3,M,3.79,17
+Mazda,Tribute,53.96,7,3XL,6.49,12
+Mercury,Topaz,55.5,5,L,3.49,20
+Audi,A6,74.05,6,S,39.99,13
+Oldsmobile,Silhouette,73.93,4,S,15.99,10
+GMC,Sonoma,78.17,3,S,2.49,19
+Suzuki,XL7,77.94,5,XS,2.99,17
+Mitsubishi,Truck,63.5,4,M,2.99,16
+Acura,Legend,76.73,5,XS,3.19,12
+Chevrolet,Corvette,77.18,5,XS,2.99,18
+Honda,CR-V,58.81,5,M,49.99,13
+Mercury,Milan,73.05,7,L,3.29,14
+Pontiac,Aztek,65.97,5,S,49.99,13
+Buick,Regal,57.06,5,3XL,4.99,19
+Honda,Prelude,61.34,4,XL,24.99,10
+Honda,Prelude,73.04,7,L,39.99,19
+Volvo,S60,72.04,6,3XL,5.49,19
+Jeep,Liberty,77.21,7,S,4.49,17
+Ford,ZX2,59.47,4,XS,2.99,14
+Audi,Quattro,57.91,3,XS,2.99,10
+Dodge,Ram Van 3500,61.8,5,3XL,3.49,12
+Ford,Explorer Sport Trac,55.54,7,XL,3.49,12
+Mercedes-Benz,190E,55.95,7,3XL,14.99,15
+Toyota,Tacoma,76.07,6,XL,6.49,12
+Toyota,4Runner,78.35,6,L,3.29,15
+Aston Martin,DBS,59.48,5,2XL,39.99,11
+Pontiac,Vibe,70.31,6,2XL,109.99,12
+Chevrolet,3500,73.82,4,XL,39.99,16
+Volkswagen,Scirocco,50.95,3,XS,119.99,14
+Mercedes-Benz,SL-Class,64.31,6,L,29.99,20
+Infiniti,G35,61.0,7,XS,79.99,16
+Dodge,Dakota Club,62.18,5,XS,99.99,20
+Holden,VS Commodore,52.69,7,2XL,4.29,11
+Lincoln,Continental,59.5,7,S,3.39,16
+BMW,645,71.44,7,M,2.99,10
+Ford,Flex,57.67,5,XS,2.99,17
+Volkswagen,Touareg 2,63.52,3,2XL,34.99,19
+Audi,R8,60.65,4,XS,15.99,10
+Toyota,MR2,63.65,4,2XL,99.99,14
+Mazda,MX-5,58.78,4,XS,19.99,14
+Chrysler,Fifth Ave,58.42,6,M,9.99,10
+Suzuki,Daewoo Magnus,76.3,7,2XL,24.99,14
+Lexus,GX,62.67,4,XS,24.99,18
+Subaru,Impreza,53.82,4,S,29.99,19
+Cadillac,SRX,73.77,4,3XL,49.99,14
+Suzuki,XL-7,64.84,6,M,6.49,14
+Audi,A5,62.86,3,S,3.29,14
+Ford,Excursion,59.01,5,3XL,8.99,13
+GMC,Vandura 3500,69.41,4,XS,1.5,10
+Aptera,2e,68.31,6,M,4.99,13
+Pontiac,Firebird,63.28,7,L,1.89,13
+Volvo,S40,78.7,3,3XL,49.99,12
+Lexus,SC,69.84,4,M,1.99,14
+Volvo,V70,73.97,7,3XL,4.79,10
+Mazda,RX-7,61.12,4,M,6.29,10
+Toyota,TundraMax,61.68,4,XS,5.99,19
+Lexus,RX,59.85,4,M,19.99,11
+Dodge,Dakota,53.5,3,2XL,3.49,12
+Chevrolet,Camaro,63.09,3,L,39.99,18
+Ford,Focus,76.66,5,L,59.99,18
+Honda,del Sol,76.45,5,L,149.99,17
+Toyota,Camry,66.92,7,XL,34.99,20
+Infiniti,QX,57.36,3,2XL,39.99,12
+Pontiac,Grand Prix,77.92,6,XL,2.49,16
+Mitsubishi,Diamante,73.57,5,M,3.79,16
+Toyota,Tercel,67.37,3,3XL,29.99,20
+Subaru,Leone,66.49,7,L,22.99,18
+Chevrolet,Monte Carlo,56.2,5,2XL,3.99,20
+Suzuki,Swift,61.35,6,S,129.99,16
+Toyota,RAV4,53.49,7,2XL,29.99,19
+Nissan,Armada,58.9,3,S,4.99,14
+Ford,Aspire,63.45,6,M,3.29,14
+Plymouth,Colt,66.24,3,M,34.99,20
+Acura,RL,72.77,5,XL,14.99,11
+Dodge,Colt,58.45,7,XL,2.49,10
+Mercury,Mountaineer,54.11,5,3XL,4.49,20
+Pontiac,Bonneville,66.86,5,L,5.99,15
+Volvo,V40,76.01,4,M,9.99,19
+MINI,Countryman,77.97,6,3XL,34.99,13
+Lexus,LX,59.93,5,XS,4.99,11
+Chrysler,LeBaron,57.2,4,L,59.99,12
+MINI,Cooper Clubman,51.21,7,S,49.99,13
+Lamborghini,Murciélago,73.15,4,S,79.99,11
+Chevrolet,Caprice Classic,72.76,3,L,2.99,13
+Buick,Roadmaster,79.04,3,L,14.99,15
+Nissan,Altima,78.44,6,XS,24.99,13
+Lexus,GS,63.96,5,3XL,22.99,10
+Nissan,Quest,67.9,3,L,1.99,19
+Ford,Mustang,61.77,7,XS,3.29,14
+Mazda,CX-9,59.18,4,2XL,12.99,11
+Chevrolet,G-Series G30,59.37,6,M,2.79,13
+Pontiac,Grand Prix,50.85,4,L,2.79,15
+Audi,S4,54.78,7,S,39.99,10
+Chrysler,300,59.08,5,3XL,3.49,19
+Mercedes-Benz,E-Class,53.29,6,XS,149.99,14
+Dodge,Charger,57.15,6,S,1.99,16
+Mitsubishi,Montero Sport,74.16,5,2XL,79.99,20
+MINI,Clubman,62.72,6,3XL,19.99,17
+Infiniti,G37,79.07,5,S,3.29,20
+Toyota,Sienna,73.97,3,XS,49.99,19
+Chevrolet,Tahoe,76.84,3,3XL,10.99,20
+Daihatsu,Charade,79.82,6,M,24.99,16
+Jaguar,X-Type,76.44,3,3XL,5.49,10
+Dodge,Viper,59.5,4,3XL,39.99,10
+Mercury,Sable,66.45,5,2XL,4.49,18
+Infiniti,G37,62.99,7,XS,12.99,18
+Ford,Courier,61.25,3,M,99.99,10
+Ford,Expedition EL,54.21,6,2XL,24.99,10
+Honda,Accord,71.79,4,3XL,1.99,13
+Mercury,Grand Marquis,73.94,4,L,5.99,19
+Dodge,Ram Van 1500,64.46,3,M,69.99,15
+Land Rover,LR4,65.8,6,XS,10.99,12
+Jeep,Comanche,54.67,4,3XL,3.99,11
+Mazda,Mazdaspeed6,72.96,5,3XL,14.99,12
+Cadillac,Seville,52.81,4,L,4.19,19
+Toyota,Sequoia,54.32,4,3XL,19.99,20
+Ford,E-Series,70.54,7,3XL,5.29,18
+Toyota,Sequoia,70.87,4,3XL,39.99,12
+Mazda,B-Series Plus,52.95,4,M,89.99,20
+Aston Martin,V8 Vantage,56.95,7,L,7.99,14
+Nissan,Maxima,73.97,6,L,22.99,18
+Honda,Civic,69.8,6,M,7.49,14
+Jaguar,XJ Series,72.44,4,L,49.99,16
+Lotus,Elan,54.7,7,3XL,19.99,18
+Chevrolet,Lumina APV,74.6,3,3XL,3.99,19
+Buick,Regal,61.61,5,XL,8.99,10
+Toyota,T100 Xtra,71.57,3,XL,4.89,19
+Cadillac,Seville,73.64,3,M,2.79,13
+Buick,Regal,54.89,6,2XL,3.99,10
+Lotus,Esprit,58.95,3,M,2.79,10
+Suzuki,SJ,52.98,4,M,49.99,15
+Chevrolet,APV,61.15,6,M,39.99,18
+Kia,Optima,54.84,4,XS,3.29,18
+Land Rover,Range Rover,62.37,7,2XL,10.99,20
+Lexus,RX Hybrid,73.49,4,S,4.29,17
+Ford,Escape,66.15,5,2XL,3.29,14
+Dodge,Viper,78.56,3,XL,19.99,11
+Chevrolet,Corvette,62.3,4,2XL,1.89,20
+Saturn,Outlook,61.36,3,XS,24.99,14
+Subaru,Outback,69.63,7,XS,2.99,18
+Infiniti,Q,74.08,6,XS,3.99,19
+Chrysler,Crossfire,69.58,5,3XL,3.49,10
+Volkswagen,Scirocco,57.79,5,S,7.99,18
+BMW,6 Series,59.33,6,L,14.99,13
+Jeep,Wrangler,79.64,5,L,2.99,19
+Ford,E-Series,52.28,4,2XL,39.99,15
+Ford,E-350 Super Duty,72.08,4,XL,4.79,18
+Volkswagen,Jetta,72.81,6,L,3.99,14
+Dodge,Viper,62.36,3,3XL,39.99,15
+Mercury,Cougar,62.38,7,S,3.29,18
+Lincoln,MKZ,75.59,6,M,24.99,13
+Audi,Allroad,62.54,5,XS,10.99,12
+Mitsubishi,Pajero,72.24,5,M,69.99,17
+Volvo,V70,63.41,7,2XL,2.99,12
+Pontiac,Firefly,51.39,5,S,3.99,19
+Toyota,Corolla,59.97,5,XL,1.99,14
+GMC,Sierra,63.12,6,3XL,32.99,18
+Toyota,Celica,61.8,5,XL,4.29,12
+MINI,Cooper,50.09,7,XS,24.99,15
+Peugeot,207,52.84,6,XL,2.49,13
+GMC,Sierra 2500,64.87,7,S,5.29,20
+Chevrolet,Tracker,68.43,4,M,39.99,20
+Mercury,Mystique,57.46,7,XS,59.99,10
+Nissan,Altima,70.18,6,2XL,19.99,15
+Mazda,RX-7,67.92,3,S,34.99,19
+Lincoln,Continental,65.68,5,M,12.99,19
+Saturn,S-Series,71.24,4,XL,12.99,17
+Chevrolet,Volt,54.84,3,3XL,5.29,19
+Chevrolet,Prizm,72.93,7,XS,4.99,12
+Mercury,Mountaineer,57.46,6,XS,69.99,20
+Mercedes-Benz,C-Class,52.16,4,XS,1.99,15
+Toyota,Tercel,75.1,3,XL,14.99,12
+Nissan,Frontier,50.49,4,XS,19.99,17
+Ford,Club Wagon,54.98,3,XL,3.89,15
+Chevrolet,Tahoe,64.67,6,XS,22.99,18
+Mercedes-Benz,SL-Class,59.24,7,3XL,249.99,15
+BMW,5 Series,60.99,6,L,24.99,11
+Lotus,Evora,76.9,4,XL,19.99,16
+Lotus,Esprit,71.55,4,XS,5.49,16
+BMW,Z3,53.65,6,2XL,149.99,19
+Subaru,Brat,70.12,5,M,2.99,10
+Jeep,Patriot,54.78,7,2XL,5.99,18
+Lexus,LS,72.33,7,M,49.99,12
+Kia,Rio,70.38,6,M,169.99,18
+Bentley,Continental GTC,76.08,5,L,25.99,15
+Mazda,CX-9,66.15,5,3XL,2.99,18
+Chevrolet,Avalanche,59.67,3,3XL,3.99,13
+Bentley,Continental Flying Spur,67.13,3,2XL,4.99,12
+Land Rover,Discovery,73.81,6,L,39.99,10
+Chevrolet,Corvette,67.34,6,XS,199,12
+Honda,Accord,51.81,3,3XL,3.49,19
+Dodge,D350,50.63,3,S,24.99,11
+Nissan,Altima,79.11,3,3XL,29.99,10
+GMC,Savana 2500,68.25,7,XL,14.99,12
+Volvo,C70,60.29,6,2XL,1.49,14
+Chrysler,Aspen,62.6,3,3XL,4.29,13
+Nissan,Quest,61.38,7,3XL,4.99,17
+Ford,Ranger,50.4,6,XL,54.99,11
+Volkswagen,CC,65.84,5,L,39.99,16
+Dodge,Caravan,77.24,5,M,99.99,10
+Mitsubishi,Galant,50.97,5,M,3.49,20
+Volkswagen,GLI,78.45,5,XL,14.99,11
+Acura,ZDX,69.89,5,XS,29.99,10
+Mazda,B-Series,58.84,6,M,59.99,18
+BMW,M3,70.37,3,M,3.29,13
+Ford,Explorer,67.26,3,XS,2.29,19
+Chevrolet,Venture,73.37,3,3XL,24.99,11
+Volvo,S80,78.05,5,XS,14.99,11
+Dodge,Charger,66.86,5,M,4.99,18
+Subaru,Tribeca,78.64,5,L,4.19,10
+Volkswagen,Golf,70.79,4,3XL,9.99,13
+Land Rover,LR3,64.21,4,3XL,3.29,19
+Subaru,Loyale,68.74,3,L,2.99,13
+Holden,VS Commodore,59.59,5,S,39.99,20
+Ford,Focus,62.14,3,S,34.99,11
+Ford,E-Series,65.2,7,L,39.99,10
+Buick,Regal,52.78,6,S,2.29,16
+BMW,X5,72.2,7,3XL,19.99,12
+Buick,Skylark,74.96,6,XL,99.99,17
+Mercedes-Benz,CL-Class,50.31,5,L,24.99,11
+Audi,200,69.48,6,2XL,19.99,17
+Jaguar,XJ Series,76.79,6,M,3.69,14
+Mercedes-Benz,CL-Class,77.87,3,3XL,89.99,15
+Ford,Focus,76.88,7,3XL,29.99,20
+Chevrolet,Corvette,61.26,4,3XL,5.99,19
+Ford,Expedition,78.82,4,M,1.49,18
+Nissan,GT-R,79.74,7,L,54.99,14
+Toyota,Yaris,74.78,5,S,24.99,16
+Toyota,Tacoma Xtra,52.03,7,XL,3.49,10
+Pontiac,Firefly,52.73,4,M,29.99,13
+Toyota,4Runner,50.43,5,M,2.99,19
+Lotus,Esprit,50.42,3,M,299.99,13
+Ford,Five Hundred,54.2,6,L,1.5,14
+Ford,Laser,74.38,3,L,199.99,15
+Pontiac,Montana,64.25,6,L,8.99,19
+Ford,F350,63.13,6,M,8.99,10
+Suzuki,Aerio,66.1,7,XL,29.99,12
+Suzuki,Esteem,56.18,3,2XL,19.99,15
+Chevrolet,Impala,63.12,7,S,2.99,15
+Nissan,Maxima,60.6,6,L,5.99,12
+Chevrolet,Silverado 2500,73.05,7,XS,4.79,19
+Maserati,GranTurismo,74.07,7,XL,8.99,12
+Mazda,RX-7,59.84,6,L,4.99,18
+Dodge,Grand Caravan,75.72,4,2XL,1.99,11
+Geo,Metro,60.21,5,M,3.99,13
+Land Rover,Defender 110,68.39,6,M,39.99,15
+Suzuki,SX4,74.92,7,M,49.99,15
+Volvo,S40,66.05,6,3XL,34.99,20
+Bentley,Arnage,68.3,6,XL,12.99,19
+Mitsubishi,Eclipse,73.65,6,XS,6.49,17
+Pontiac,Bonneville,51.4,4,L,2.29,20
+Hyundai,Tiburon,54.25,5,M,29.99,19
+Isuzu,Trooper,66.5,7,XS,4.99,18
+Mercedes-Benz,G-Class,51.86,7,XS,79.99,10
+Mitsubishi,Expo,56.38,4,XS,19.99,18
+Acura,RDX,68.76,6,3XL,79.99,11
+Ford,Taurus,67.37,6,S,1.99,19
+Audi,S8,54.14,4,2XL,49.99,19
+Mercury,Grand Marquis,55.69,4,S,8.49,11
+Dodge,Dakota Club,74.88,7,2XL,59.99,16
+Mitsubishi,3000GT,69.51,7,S,12.99,13
+Mitsubishi,Montero Sport,59.21,6,XS,34.99,12
+Mitsubishi,3000GT,73.03,3,XL,49.99,10
+Acura,TL,69.94,6,XS,69.99,16
+Infiniti,Q,61.34,3,3XL,19.99,13
+BMW,3 Series,67.49,6,XS,3.99,17
+Toyota,Prius Plug-in,58.41,6,XS,59.99,20
+BMW,5 Series,78.85,3,2XL,5.99,10
+Chevrolet,Aveo,57.03,5,XS,49.99,17
+Ram,1500,59.97,6,3XL,2.69,15
+Cadillac,Catera,63.52,3,XS,59.99,19
+GMC,1500 Club Coupe,56.28,6,XS,8.99,14
+Cadillac,Seville,56.24,6,XS,14.99,16
+Mitsubishi,Diamante,79.53,7,S,5.49,18
+BMW,530,55.94,5,2XL,24.99,10
+Chevrolet,Malibu,61.58,6,L,24.99,10
+Lexus,SC,64.66,6,XL,39.99,19
+Audi,S5,60.11,6,S,2.99,12
+BMW,545,60.6,3,M,19.99,13
+GMC,Sonoma,61.73,4,M,34.99,10
+Saab,9-3,62.66,4,L,2.99,15
+Subaru,Leone,72.83,7,S,6.49,19
+Ford,E250,65.04,4,2XL,8.99,10
+Dodge,Caliber,61.12,3,2XL,19.99,11
+Mercury,Milan,79.89,5,XS,59.99,17
+Chevrolet,Venture,59.12,6,XL,7.99,20
+Mercedes-Benz,W126,64.44,7,2XL,34.99,12
+Lincoln,Continental Mark VII,52.75,4,3XL,79.99,19
+GMC,Canyon,74.46,5,L,3.99,11
+Kia,Carens,58.66,7,3XL,5.99,11
+Chevrolet,G-Series G30,66.09,7,2XL,2.79,13
+Dodge,Viper RT/10,64.93,5,S,19.99,11
+Chevrolet,G-Series G30,63.52,5,XL,11.99,15
+Mitsubishi,Mighty Max,62.25,4,S,44.99,19
+Nissan,Rogue,76.46,6,M,4.29,17
+Nissan,Armada,62.9,7,XS,14.99,10
+BMW,X5,59.51,6,S,29.99,13
+Volvo,XC90,79.52,5,M,24.99,14
+GMC,Savana,53.6,4,3XL,5.49,12
+Toyota,Highlander,78.47,5,M,14.99,20
+GMC,Suburban 1500,59.37,4,XS,15.99,18
+Honda,Pilot,60.49,3,2XL,12.99,20
+Acura,CL,73.41,3,XL,3.99,15
+Nissan,Maxima,70.73,5,2XL,3.29,11
+Mazda,B-Series,68.38,4,L,34.99,13
+Saab,9-3,50.53,7,M,79.99,11
+Jaguar,XK,50.5,3,S,299.99,14
+Land Rover,Discovery Series II,73.49,6,3XL,2.99,13
+Isuzu,Rodeo,58.27,4,XL,19.99,19
+Toyota,TundraMax,63.25,3,M,14.99,20
+Ford,Escort,73.35,6,XL,34.99,18
+Dodge,Ram 2500,73.62,5,S,39.99,13
+Pontiac,Grand Prix,78.78,6,S,24.99,16
+Ford,Escape,77.85,4,2XL,39.99,19
+Pontiac,LeMans,72.32,6,3XL,149.99,18
+Chevrolet,Sportvan G30,68.62,7,S,2.49,20
+Dodge,Nitro,66.17,4,L,39.99,11
+Acura,CL,57.7,4,M,49.99,13
+Mazda,RX-7,57.4,3,XL,4.49,14
+Audi,A4,56.67,3,S,9.99,16
+Lincoln,Continental,76.48,7,S,5.49,14
+Dodge,Ram Van B350,63.58,5,XL,44.99,11
+Nissan,Pathfinder,58.21,3,3XL,39.99,16
+GMC,Savana 3500,70.83,3,XS,69.99,11
+Mercedes-Benz,SL-Class,53.4,5,3XL,2.49,19
+Ford,Focus,62.2,6,S,39.99,13
+Jeep,Cherokee,73.78,3,M,2.59,12
+Toyota,Land Cruiser,73.65,5,L,89.99,15
+Kia,Sephia,76.55,3,XS,24.99,16
+Ford,Freestar,66.01,5,2XL,199.99,19
+Pontiac,Montana,78.52,3,2XL,15.99,14
+Dodge,Stratus,75.28,7,L,2.29,10
+Hyundai,Tucson,59.04,7,2XL,79.99,17
+Chrysler,Sebring,70.38,3,2XL,7.99,13
+Ford,Explorer,54.83,5,XL,2.49,12
+Mazda,CX-9,65.94,4,S,8.99,19
+Hyundai,Azera,76.93,5,S,4.29,13
+Mazda,929,71.66,4,S,3.19,19
+Mitsubishi,Pajero,78.45,3,L,2.49,13
+Honda,Civic,62.08,6,XS,34.99,13
+Dodge,Journey,70.27,5,XS,2.49,11
+Audi,S8,76.16,5,3XL,19.99,12
+Mercury,Grand Marquis,76.43,4,L,39.99,11
+Scion,xA,60.93,7,M,49.99,12
+Mazda,MX-5,66.43,5,S,99.99,18
+Toyota,Matrix,61.16,6,3XL,12.99,18
+Dodge,Ram Van 2500,69.29,5,XL,299.99,13
+GMC,Yukon Denali,66.55,6,XS,1.99,19
+Pontiac,Firebird,55.99,4,XS,1.49,17
+Acura,Integra,73.72,5,XS,49.99,14
+Nissan,Frontier,71.29,4,3XL,2.09,15
+GMC,Sonoma Club Coupe,51.92,6,M,4.99,12
+Ford,F350,69.87,4,XS,2.99,12
+Toyota,Tacoma Xtra,63.5,6,S,4.99,15
+Dodge,Ram Van B350,77.9,7,S,4.99,14
+Volkswagen,Rabbit,67.79,6,3XL,49.99,17
+Honda,Odyssey,76.59,7,3XL,6.49,14
+MINI,Cooper,79.32,7,XL,49.99,11
+Oldsmobile,Cutlass,50.9,5,3XL,1.99,17
+BMW,650,73.46,3,L,9.99,17
+Ford,Escort,76.8,5,M,3.39,13
+Acura,TL,54.0,4,3XL,8.49,20
+Volkswagen,New Beetle,53.11,5,M,4.49,20
+Mercedes-Benz,CLS-Class,64.55,5,XS,14.99,15
+BMW,3 Series,63.65,4,2XL,299.99,10
+Ferrari,430 Scuderia,65.84,7,XS,3.49,13
+Mitsubishi,Galant,67.35,5,S,89.99,17
+BMW,M3,73.63,5,3XL,19.99,11
+Mercedes-Benz,C-Class,54.47,4,XS,39.99,10
+Land Rover,Freelander,71.63,7,M,34.99,20
+Volkswagen,rio,50.19,5,XS,29.99,17
+BMW,M3,69.85,4,XS,2.99,16
+GMC,Sierra 1500,76.4,4,L,29.99,15
+Dodge,Ram 2500,68.56,7,XL,29.99,11
+Volvo,C30,76.37,3,3XL,11.99,14
+GMC,Safari,74.43,5,M,59.99,10
+Mazda,B-Series,55.11,5,2XL,4.99,20
+Suzuki,SX4,73.68,3,M,8.99,12
+Lincoln,Continental,58.64,3,XL,19.99,11
+Cadillac,Seville,55.65,6,S,59.99,16
+GMC,Sonoma,69.86,5,S,39.99,11
+Mitsubishi,GTO,66.9,3,3XL,6.89,14
+Audi,A4,77.93,3,M,39.99,14
+Honda,Prelude,75.6,3,XS,1.29,17
+Mitsubishi,Eclipse,72.72,4,3XL,3.49,20
+Audi,100,79.14,7,2XL,79.99,14
+Pontiac,Torrent,67.06,6,3XL,24.99,11
+Honda,Element,61.28,7,M,22.99,20
+Toyota,Tacoma Xtra,63.84,5,S,19.99,18
+GMC,Sierra Hybrid,74.68,4,M,39.99,10
+Kia,Sportage,72.77,3,XS,0.99,12
+Honda,Prelude,51.78,3,XL,4.79,17
+GMC,Sierra,67.8,6,XL,2.49,17
+Rolls-Royce,Phantom,63.11,7,XL,3.99,18
+Cadillac,DeVille,65.13,3,2XL,4.29,18
+Oldsmobile,Silhouette,79.32,3,2XL,39.99,18
+Saturn,Aura,65.05,5,3XL,12.99,15
+Dodge,Caravan,74.93,5,XL,2.99,10
+Pontiac,Firefly,54.11,5,S,15.49,19
+Hyundai,Santa Fe,67.31,7,L,18.99,15
+Buick,Century,77.21,5,S,5.29,19
+Buick,Somerset,63.24,4,3XL,29.99,17
+Pontiac,Grand Am,68.75,5,XL,4.29,12
+Chevrolet,Tahoe,57.98,3,XL,8.99,11
+Lincoln,LS,56.7,3,2XL,34.99,16
+Lexus,LS Hybrid,78.12,6,3XL,4.29,13
+Volkswagen,Jetta,72.99,4,S,2.29,16
+Saturn,L-Series,60.84,6,XS,1.99,17
+Ford,Aerostar,63.58,7,2XL,39.99,10
+Mazda,B-Series,60.07,7,3XL,4.29,15
+Mitsubishi,Eclipse,63.73,4,XL,29.99,11
+Volkswagen,GTI,73.47,3,M,5.99,20
+Nissan,Armada,70.61,5,2XL,19.99,19
+Volkswagen,Touareg,54.26,5,L,24.99,13
+Chrysler,300,63.78,6,M,6.99,13
+GMC,Sierra 2500,60.51,4,L,3.5,18
+Volvo,V70,71.68,5,3XL,5.99,15
+Ford,F-Series,66.67,6,XS,6.99,16
+Cadillac,Fleetwood,53.41,7,XL,3.49,13
+BMW,Z4,74.8,7,M,2.99,16
+Nissan,Pathfinder Armada,60.41,5,XS,12.99,18
+Mercury,Milan,54.42,3,2XL,199.99,11
+Chevrolet,Silverado 1500,74.41,7,XL,12.99,17
+Mercedes-Benz,G-Class,78.6,6,M,2.99,19
+Jaguar,XJ Series,75.76,7,XL,69.99,15
+Mitsubishi,Endeavor,60.75,5,2XL,2.99,15
+Buick,Roadmaster,61.4,4,XL,79.99,17
+Honda,Civic,57.73,4,M,89.99,16
+Lexus,IS,61.53,7,2XL,49.99,13
+Chevrolet,Express 3500,69.71,5,M,34.99,12
+Chrysler,Sebring,73.25,7,M,4.29,16
+Mercedes-Benz,CL65 AMG,61.1,5,S,11.99,10
+Mazda,Miata MX-5,53.4,6,2XL,12.99,13
+Suzuki,X-90,74.65,5,M,2.39,20
+Scion,xB,54.22,6,S,14.99,10
+Nissan,Altima,72.82,6,XS,15.99,18
+Mitsubishi,Space,59.12,6,3XL,19.99,14
+Suzuki,Grand Vitara,54.02,3,3XL,79.99,16
+Mercedes-Benz,S-Class,75.42,3,S,3.79,18
+Nissan,Murano,51.38,4,S,4.5,13
+Chevrolet,Malibu,54.93,4,2XL,2.29,17
+BMW,7 Series,54.28,3,XL,3.49,19
+Dodge,Nitro,57.29,3,XL,24.99,20
+Ford,Taurus,61.08,3,L,14.99,12
+Mercedes-Benz,W201,79.34,4,3XL,34.99,15
+Bentley,Continental GT,78.87,7,XS,3.99,14
+Mazda,Protege,74.05,5,2XL,159.99,13
+Volvo,C30,65.86,3,XS,3.99,20
+Porsche,911,72.11,6,3XL,9.49,14
+Pontiac,Grand Prix,79.16,3,L,54.99,19
+Buick,Skylark,79.28,7,XS,39.99,19
+Mazda,B-Series,52.92,3,M,39.99,19
+Jaguar,XK Series,59.38,7,XS,22.99,16
+Ford,Aerostar,59.09,6,2XL,8.99,18
+Chevrolet,Cobalt,52.34,4,3XL,12.99,14
+Pontiac,LeMans,76.66,4,3XL,29.99,14
+Infiniti,Q,68.55,6,M,2.49,19
+Mercedes-Benz,SLK-Class,54.01,7,3XL,1.99,16
+MINI,Cooper,68.02,3,M,39.99,14
+Audi,Cabriolet,63.58,5,L,1.49,17
+Mercedes-Benz,S-Class,74.83,4,3XL,19.99,20
+Nissan,Rogue,56.06,3,XS,39.99,13
+Chevrolet,Blazer,50.2,7,XL,39.99,15
+BMW,5 Series,79.54,4,3XL,3.49,13
+Mitsubishi,Endeavor,72.95,4,M,89.99,16
+Chrysler,Sebring,79.66,6,XL,6.99,10
+Lexus,IS-F,79.45,4,XL,12.99,11
+Cadillac,Eldorado,52.47,3,M,5.99,10
+Chrysler,Town & Country,51.14,5,XL,1.99,18
+Cadillac,Escalade EXT,62.99,6,XL,18.99,17
+Kia,Sorento,68.17,7,XS,7.99,18
+Infiniti,FX,68.72,4,XL,5.49,10
+Buick,Somerset,54.41,5,XL,24.99,10
+Infiniti,Q,75.74,4,XS,3.79,14
+Dodge,D150 Club,75.95,4,S,49.99,14
+Chevrolet,Silverado 1500,67.21,3,L,129.99,10
+Land Rover,Discovery,73.82,5,3XL,30,12
+Ford,Ranger,77.39,7,S,299.99,20
+Maybach,57,65.85,4,S,2.29,16
+Mercury,Cougar,70.92,5,M,54.99,12
+Buick,LaCrosse,56.41,5,XS,59.99,16
+Honda,Ridgeline,52.09,6,3XL,4.29,17
+Chevrolet,Suburban 2500,72.27,3,2XL,24.99,16
+Cadillac,DeVille,53.9,6,M,29.99,18
+Suzuki,SJ,66.25,3,M,2.29,15
+Volkswagen,Eos,72.36,5,XS,14.99,14
+Ford,Falcon,65.52,5,XL,3.79,11
+GMC,Sierra 3500,76.41,7,M,1.5,15
+Chevrolet,Express 1500,78.79,7,L,3.99,13
+Ford,Explorer,73.6,5,3XL,8.99,10
+Oldsmobile,Intrigue,51.11,6,M,3.19,12
+Chevrolet,Beretta,64.47,5,2XL,19.99,12
+Saab,9-3,73.05,5,2XL,1.89,13
+Audi,200,62.92,5,2XL,2.49,17
+BMW,X5,53.63,4,L,34.99,18
+BMW,Z3,68.05,7,XS,29.99,11
+Lincoln,Town Car,64.79,5,2XL,24.99,10
+Hyundai,Veracruz,57.82,4,S,34.99,18
+Audi,RS 6,79.01,3,XL,3.29,13
+Saab,9000,58.9,4,2XL,29.99,19
+Chevrolet,Silverado Hybrid,55.36,5,S,27.99,11
+Mercedes-Benz,SL-Class,67.46,3,3XL,39.99,12
+Mitsubishi,Raider,69.59,3,L,1.89,19
+Audi,S4,74.09,3,M,15.99,16
+Porsche,Boxster,74.56,7,XS,54.99,18
+Toyota,Corolla,50.85,6,3XL,1.39,14
+Mercedes-Benz,CLK-Class,76.25,4,M,4.79,14
+Chevrolet,Suburban,71.97,7,M,6.99,20
+Mitsubishi,Galant,72.81,6,3XL,24.99,12
+Mazda,MPV,61.28,4,XL,3.29,14
+Honda,Civic,68.49,3,L,3.99,19
+Chevrolet,Corsica,66.58,7,S,49.99,11
+Pontiac,Grand Prix,52.62,5,M,3.59,10
+Ford,Probe,51.52,4,3XL,12.99,11
+Oldsmobile,Achieva,65.25,3,XS,19.99,17
+Infiniti,QX56,59.67,7,2XL,3.49,11
+GMC,Yukon XL 1500,64.09,6,XL,4.99,12
+Chevrolet,Silverado 3500,77.95,5,M,2.99,10
+Dodge,Dakota Club,75.99,3,XS,49.99,19
+Lamborghini,Gallardo,73.51,7,2XL,19.99,15
+BMW,7 Series,78.97,6,2XL,3.49,19
+Chevrolet,Camaro,53.84,7,2XL,8.99,16
+Subaru,Justy,72.99,4,3XL,2.49,11
+Mitsubishi,Eclipse,52.01,7,M,6.49,19
+Saab,9000,67.26,3,M,109.99,11
+GMC,Yukon XL 1500,77.03,7,S,39.99,13
+Chevrolet,Lumina,65.35,3,XL,9.99,13
+Oldsmobile,Bravada,51.24,7,S,24.99,12
+Audi,S8,52.73,5,XS,29.99,14
+Mitsubishi,Galant,50.64,7,M,129.99,11
+Mercedes-Benz,SLK-Class,71.64,6,XS,9.99,16
+Lincoln,Navigator L,74.58,7,S,4.99,16
+Audi,A4,65.31,7,XS,3.99,15
+MINI,Cooper,77.94,5,2XL,29.99,17
+Nissan,Murano,65.63,6,XS,24.99,18
+Ford,Edge,53.54,7,M,45.99,17
+Honda,Civic,74.38,3,M,1.99,13
+Mitsubishi,Outlander Sport,56.83,3,M,15.99,10
+Honda,Fit,60.08,6,L,3.99,12
+Lincoln,Blackwood,74.92,4,L,14.99,12
+Jeep,Patriot,65.93,3,2XL,39.99,15
+Saab,9-3,65.04,3,L,12.99,12
+Suzuki,SJ 410,67.42,6,M,12.99,19
+Dodge,Dakota,66.77,6,S,10.99,15
+Chevrolet,1500,50.22,7,2XL,19.99,10
+Mercury,Lynx,71.24,7,XL,3.99,15
+Chevrolet,Avalanche 1500,58.9,6,S,2.99,10
+Ford,Crown Victoria,74.39,6,L,129.99,16
+Audi,TT,61.78,7,S,22.99,14
+Acura,MDX,64.03,3,2XL,34.99,20
+Porsche,911,54.51,3,L,15.99,19
+Honda,Fit,50.53,5,S,4.99,19
+Buick,Rendezvous,79.31,7,L,2.99,11
+Bentley,Continental GTC,69.61,3,S,149.99,19
+Ford,Edge,75.68,4,2XL,26.99,13
+Nissan,Altima,69.81,7,S,39.99,15
+Honda,Civic,77.02,4,M,4.29,14
+Suzuki,SX4,75.53,3,3XL,2.49,18
+Chevrolet,Silverado 2500,59.35,7,2XL,249.99,18
+Ford,Focus,71.72,5,2XL,2.99,16
+Chevrolet,Traverse,60.57,7,L,29.99,18
+Nissan,Maxima,75.17,3,S,49.99,16
+Honda,CR-V,54.92,5,M,4.29,15
+Chevrolet,Sportvan G20,57.5,5,M,18.99,13
+Chevrolet,Silverado 3500,78.35,6,XL,59.99,14
+Nissan,Titan,72.04,6,XL,299.99,11
+Mitsubishi,GTO,50.46,3,2XL,6.49,16
+Chevrolet,Corsica,79.32,5,M,2.79,12
+GMC,Jimmy,77.74,4,3XL,49.99,12
+Lexus,RX Hybrid,76.5,6,2XL,2.49,14
+Cadillac,Escalade,73.69,6,XL,19.99,13
+Cadillac,SRX,70.75,4,XS,1.29,17
+Aston Martin,DBS,74.71,6,XL,8.99,20
+Pontiac,Sunbird,52.28,4,XL,1.5,20
+Mitsubishi,Eclipse,67.08,5,M,3.99,19
+Saturn,Outlook,54.55,5,3XL,24.99,18
+Mercury,Cougar,65.43,4,2XL,44.99,15
+Dodge,Ram 1500,70.54,3,XS,24.99,15
+BMW,Z3,78.32,6,S,39.99,18
+Nissan,Quest,54.29,7,XL,19.99,16
+GMC,Jimmy,74.51,3,XL,19.99,14
+Mazda,MX-5,54.18,6,L,3.99,18
+Dodge,Ram Van 3500,60.85,4,2XL,5.99,16
+Toyota,Corolla,72.25,3,M,4.99,18
+Oldsmobile,LSS,63.67,3,S,49.99,14
+Dodge,Ram 1500,62.82,4,M,34.99,12
+Chevrolet,Camaro,68.58,3,XS,49.99,14
+Chevrolet,Express,54.69,7,L,4.5,20
+BMW,X3,67.9,3,S,5.49,16
+Land Rover,Discovery,79.51,6,XL,4.49,12
+Pontiac,Safari,58.95,7,L,3.49,14
+Volkswagen,Jetta,65.43,7,2XL,5.49,14
+Ford,Tempo,53.81,3,2XL,49.99,17
+Toyota,Echo,59.7,6,XL,3.99,16
+Isuzu,Rodeo,65.2,6,XL,19.99,15
+Kia,Rondo,66.75,5,XL,22.99,13
+Buick,Regal,75.58,7,XS,99.99,17
+Morgan,Aero 8,56.45,6,2XL,15.99,14
+Dodge,Viper RT/10,64.59,7,S,3.99,16
+Plymouth,Voyager,50.62,4,L,54.99,20
+Volvo,C70,60.33,6,S,2.99,10
+Hummer,H1,74.84,6,2XL,4.99,18
+Volkswagen,Phaeton,72.94,5,S,59.99,15
+Ford,Edge,55.36,6,XS,6.49,12
+Volvo,960,51.9,3,3XL,3.99,14
+Chevrolet,Malibu,64.27,5,L,4.49,16
+Ford,E-Series,53.85,4,XL,29.99,12
+Honda,Fit,54.8,3,2XL,9.99,18
+Lexus,LS,75.7,4,XL,22.99,17
+Pontiac,Firebird,78.01,3,3XL,4.49,15
+Smart,Fortwo,60.02,3,M,34.99,11
+Infiniti,FX,57.51,4,2XL,5.99,19
+Dodge,Stratus,59.74,4,XL,2.99,15
+Audi,Coupe GT,54.45,6,3XL,3.49,15
+Pontiac,Vibe,60.08,5,2XL,15.99,19
+Honda,Insight,62.74,3,XS,3.49,15
+Volkswagen,Passat,54.71,3,XL,3.29,14
+Ford,Ranger,52.33,3,XS,5.99,20
+Mazda,Mazda6,55.19,5,XL,1.99,14

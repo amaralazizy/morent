@@ -1,7 +1,7 @@
 import Logo from "@/components/Logo";
 import { Separator } from "@radix-ui/react-separator";
 
-export default function Footer() {
+export default async function Footer() {
   const links = [
     {
       category: "About",

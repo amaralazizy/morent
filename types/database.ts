@@ -1,18 +1,22 @@
-export type Car = {
+export interface CarType {
   id: string;
-  name: string;
+  created_at?: string;
+  brand: string;
+  model: string;
   type: string;
-  capacity: number;
-  fuelTank: number;
+  tank: number;
   transmission: string;
-  price: number;
-  discount: number;
-  images: string[];
-  rating: number;
-  description: string;
-  reviews?: Review[];
-};
-
+  capacity: number;
+  rent_price: number;
+  discount_percentage?: number;
+  price_after_discount: number;
+  car_images: {
+    id?: string;
+    car_id?: string;
+    image_url: string;
+  }[];
+  // Add other car properties as needed
+}
 export type Review = {
   id: string;
   rating: number;

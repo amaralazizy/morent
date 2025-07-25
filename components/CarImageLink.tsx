@@ -1,18 +1,18 @@
-"use client";
-import { Car } from "@/types/database";
+// "use client";
+import { CarType } from "@/types/database";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export default function CarImageLink({ car, className }: { car: Car; className?: string }) {
-    const router = useRouter();
+export default function CarImageLink({ car, className }: { car: CarType; className?: string }) {
+    // const router = useRouter();
     return (
-      <div
+      <Link
         className={cn("relative px-9 mb-16 cursor-pointer", className)}
-        onClick={() => router.push(`/car/${car.id}`)}
+        href={`/car/${car.id}`}
       >
         <Image
-          src="/car1.png"
+          src={car?.car_images[0]?.image_url}
           // src={car.image}
           alt="Car"
           width={250}
@@ -20,6 +20,6 @@ export default function CarImageLink({ car, className }: { car: Car; className?:
           className="rounded-[10px] object-cover mx-auto"
         />
         <div className="bg-gradient-to-b from-transparent to-white h-full w-full absolute top-1/3 left-0 overflow-hidden"></div>
-      </div>
+      </Link>
     );
 }
